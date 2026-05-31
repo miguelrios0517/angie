@@ -12,6 +12,7 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
 
 const metadata = {
   title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
@@ -71,6 +72,36 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
+    title="Tu Laboratorio de Transformación"
+    subtitle="Reprograma tu mente, libera el estrés y diseña una vida de auto-maestría."
+    tagline="El Enfoque"
+    items={[
+      {
+        title: 'Rompe el Autosabotaje Diario',
+        description:
+          'Desarmamos los bloqueos invisibles y las creencias limitantes con PNL, reconfigurando tu diálogo interno para que dejes de frenar tus proyectos y recuperes el control de tus decisiones.',
+        icon: 'flat-color-icons:document',
+      },
+      {
+        title: 'Libera Estrés desde el Cuerpo',
+        description:
+          'Desactivamos la alerta constante y la tensión acumulada en tu sistema nervioso con EFT Tapping e Hipnosis, transformando el desgaste diario en una calma interna e inquebrantable.',
+        icon: 'flat-color-icons:template',
+      },
+      {
+        title: 'Diseña una Mente Exitosa',
+        description:
+          'Pasa de sobrevivir a liderar tu vida con merecimiento real, alineando tu autoestima y tus hábitos diarios con tus metas más ambiciosas y un propósito de vida totalmente claro.',
+        icon: 'flat-color-icons:voice-presentation',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- <Features2
     title="Tu Espacio de Transformación"
     subtitle="Olvídate de los enfoques donde solo se habla del problema sin avanzar. Este es un espacio práctico, compasivo y centrado en resultados para dominar tus emociones, cerrar ciclos y activar tus recursos internos. Fusionamos el Coaching Estratégico y la PNL Avanzada para reprogramar tus patrones de pensamiento y alinear tu mente con tus metas."
     tagline="Bienvenidos"
@@ -78,7 +109,7 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Features2>
+  </Features2> -->
 
   <!-- Content Widget **************** -->
 
@@ -90,7 +121,7 @@ const metadata = {
         icon: 'tabler:brand-dribbble',
         callToAction: {
           target: '_blank',
-          text: 'Dribbble',
+          text: 'Facebook',
           href: '#',
         },
       },
@@ -98,7 +129,7 @@ const metadata = {
         icon: 'tabler:brand-behance',
         callToAction: {
           target: '_blank',
-          text: 'Behance',
+          text: 'LinkedIn',
           href: '#',
         },
       },
@@ -106,7 +137,7 @@ const metadata = {
         icon: 'tabler:brand-pinterest',
         callToAction: {
           target: '_blank',
-          text: 'Pinterest',
+          text: 'Instagram',
           href: '#',
         },
       },
@@ -118,53 +149,26 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Tu Guía: Angie Wong</h2>
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Conoce a tu Coach: Angie Wong</h2>
       <p>
-        Con casi dos décadas de experiencia en docencia y consultoría privada, me he especializado en entender cómo
-        funcionamos por dentro. Soy Coach de Vida y Experta en PNL Avanzada, con maestrías internacionales en Bienestar
-        Emocional y Psicología Clínica.
+        Hola, soy Angie Wong, coach certificada en Neurolingüística, especialista en el bienestar emocional y apasionada
+        por el crecimiento humano. Con más de 15 años de experiencia acompañando a personas a superar desafíos y liderar
+        sus vidas, combino mi formación en psicología del bienestar con certificaciones internacionales en PNL Avanzada,
+        EFT Tapping e Hipnosis Ericksoniana.
       </p>
       <br />
       <p>
-        Diseñé un método integral y muy cercano que une lo mejor de la estrategia mental con herramientas prácticas para
-        que uses tus propios recursos y transformes cualquier desafío en tu mayor fortaleza.
+        Mi propósito no es darte respuestas genéricas, sino ofrecerte un espacio seguro y virtual donde diseñemos las
+        herramientas exactas que necesitas para alcanzar tus metas y vivir con total coherencia. Demos el primer paso
+        juntos y empecemos a construir tu cambio hoy mismo.
       </p>
       <br />
-      <p>Demos el primer paso juntos y empecemos a construir tu cambio hoy mismo.</p>
     </Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
-
-  <Features2
-    title="Diferentes Caminos para tu Evolución"
-    items={[
-      {
-        title: 'Sesiones de 50 Minutos',
-        description:
-          'Encuentros individuales para resolver bloqueos puntuales, tomar decisiones complejas y aliviar el estrés con herramientas en tiempo real.',
-        icon: 'flat-color-icons:document',
-      },
-      {
-        title: 'Programa de 12 Semanas',
-        description:
-          'Un proceso estructurado paso a paso para reprogramar tu mente, eliminar el autosabotaje y diseñar tu futuro con claridad absoluta.',
-        icon: 'flat-color-icons:template',
-      },
-      {
-        title: 'Clases y Grupos de Foco',
-        description:
-          'Espacios grupales dinámicos para aprender PNL, gestionar tus emociones y potenciar tu desarrollo personal en comunidad.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-    ]}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Features2>
 
   <!-- Features Widget *************** -->
 
@@ -217,23 +221,23 @@ const metadata = {
 
   <Content
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    tagline="Coaching Personal Online"
+    title="Elige tu Camino de Transformación (100% Virtual)"
     items={[
       {
-        title: 'Built on top of Astro v6',
+        title: 'Claridad en un Clic',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          'Identifica el origen exacto del estancamiento personal o relacional en sesiones uno a uno de alta eficiencia.',
       },
       {
-        title: 'Styled using Tailwind CSS v4',
+        title: 'Herramientas de Rescate',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          'Llévate ejercicios prácticos de PNL y liberación somática para aplicar en tu día a día desde el primer encuentro.',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: 'Sintonía y Comunicación',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'Espacio seguro para parejas que buscan desarmar dinámicas destructivas y construir metas en común con total coherencia.',
       },
     ]}
     image={{
@@ -242,8 +246,10 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Sesión Individual/Pareja (50 minutos)
+      </h3>
+      Espacio dinámico para resolver bloqueos inmediatos, calibrar tus emociones o alinear metas en tu relación de forma online.
     </Fragment>
 
     <Fragment slot="bg">
@@ -257,23 +263,18 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+        title: 'Arquitectura del Cambio',
+        description: `12 encuentros semanales guiados paso a paso para auditar tu psique, limpiar el pasado y diseñar tu futuro.`,
       },
       {
-        title: 'Multiple layout possibilities',
+        title: 'Enfoque Multi-Técnica',
         description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
+          'Acceso completo a dinámicas de Hipnosis Ericksoniana, EFT Tapping avanzado y reestructuración de tu línea del tiempo.',
       },
       {
-        title: 'Fully responsive design',
+        title: 'Ingeniería Sonora Exclusiva',
         description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
-      },
-      {
-        title: 'Integration of media',
-        description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
+          'Recibe un audio de neuro-codificación nocturna personalizado con tu voz y frecuencias binaurales para blindar tus resultados.',
       },
     ]}
     image={{
@@ -281,7 +282,12 @@ const metadata = {
       alt: 'Blueprint Image',
     }}
   >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Programa Neuro-Alquimia (12 Semanas)
+      </h3>
+      Viaje estructurado de 12 semanas para reprogramar tu software mental, dominar tus emociones y consolidar tu auto-maestría.
+    </Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -295,23 +301,19 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Enhanced user engagement',
+        title: 'Laboratorios Temáticos',
         description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
+          'Talleres prácticos enfocados en dominar el estrés, hackear el autosabotaje y desarrollar habilidades sociales de alto nivel.',
       },
       {
-        title: 'Continuous improvement',
+        title: 'Co-creación y Feedback',
         description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
+          'Dinámicas interactivas donde el aprendizaje se acelera al escuchar las experiencias y soluciones de otros miembros.',
       },
       {
-        title: 'Time and resource efficiency',
+        title: 'Soporte Comunitario',
         description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
-      },
-      {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
+          'El impulso de un ecosistema humano que te acompaña, te motiva y te mantiene responsable de tus propias metas.',
       },
     ]}
     image={{
@@ -319,136 +321,73 @@ const metadata = {
       alt: 'Astronauts Image',
     }}
   >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Clases y Grupos de Enfoque</h3>
+      Talleres interactivos en vivo para dominar el estrés y acelerar tu crecimiento personal a través del espejo colectivo.
+    </Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
-  <!-- Steps Widget ****************** -->
+  <!-- Testimonials Widget *********** -->
 
-  <Steps
-    title="Get your dream website up and running in no time with AstroWind."
-    items={[
+  <Testimonials
+    title="Lo Que Dicen Mis Clientes"
+    testimonials={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
-        description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
+        testimonial: `El proceso con Angie ha sido transformador. Sus herramientas prácticas de PNL realmente me ayudaron a superar la tensión constante que afectaba mi día a día. Ahora me siento empoderada y capaz de manejar los desafíos de una manera muy saludable.`,
+        name: 'Valeria Mendoza',
+        job: 'Mentees Satisfecha',
+        image: {
+          src: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Cary Kennedy Image',
+        },
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
-        description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
+        testimonial: `Como coach, Angie me guio a través de un proceso de autorreflexión que cambió mi perspectiva y me dio el impulso necesario para avanzar en mi carrera. Su apoyo fue fundamental para alcanzar mis metas profesionales.`,
+        name: 'Carlos Espinoza',
+        job: 'Cliente Profesional',
+        image: {
+          src: 'https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Josh Wilkinson Image',
+        },
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
-        description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
-      },
-      {
-        title: 'Ready!',
-        icon: 'tabler:check',
+        testimonial:
+          'Gracias a las sesiones de claridad y enfoque con Angie, finalmente pude tomar decisiones informadas sobre mi futuro académico y profesional. Sus herramientas me brindaron total seguridad en mí mismo.',
+        name: 'Mateo Silva',
+        job: 'Estudiante Universitario',
+        image: {
+          src: 'https://images.unsplash.com/photo-1512361436605-a484bdb34b5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Sidney Hansen Image',
+        },
       },
     ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
+    callToAction={{
+      target: '_blank',
+      text: 'Leer más testimonios',
+      href: 'https://github.com/arthelokyo/astrowind',
+      icon: 'tabler:chevron-right',
     }}
-  />
-
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS v4"
-    tagline="Components"
-    items={[
-      {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-        icon: 'flat-color-icons:template',
-      },
-      {
-        title: 'Heros',
-        description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
-      },
-      {
-        title: 'Features',
-        description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-        icon: 'flat-color-icons:approval',
-      },
-      {
-        title: 'Content',
-        description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'flat-color-icons:document',
-      },
-      {
-        title: 'Call-to-Action',
-        description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
-      },
-      {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-      {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
-        icon: 'flat-color-icons:business-contact',
-      },
-      {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'flat-color-icons:database',
-      },
-    ]}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Features2>
-
-  <!-- HighlightedPosts Widget ******* -->
-
-  <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro v6 + Tailwind CSS v4.
-                        Astro is a very interesting technology. Thanks.
-                `}
   />
 
   <!-- FAQs Widget ******************* -->
 
   <FAQs
-    title="Frequently Asked Questions"
+    title="Preguntas Frecuentes"
     subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
     tagline="FAQs"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: '¿Cómo sé si necesito una sesión individual o el programa de 12 semanas?',
         description:
           "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
       },
       {
-        title: 'What do I need to start?',
+        title: '¿Las sesiones virtuales son igual de efectivas que las presenciales?',
         description:
           'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
       },
@@ -492,20 +431,28 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
+        text: 'Agendar sesión',
         href: 'https://github.com/arthelokyo/astrowind',
         target: '_blank',
         icon: 'tabler:download',
       },
     ]}
   >
-    <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
-    </Fragment>
+    <Fragment slot="title"> ¿Empezamos el viaje? </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      El cambio profundo que tanto buscas está esperándote justo al otro <br class="hidden md:inline" />lado de una sola
+      decisión.
     </Fragment>
   </CallToAction>
+
+  <!-- HighlightedPosts Widget ******* -->
+
+  <BlogLatestPosts
+    title="Nuestro Blog - Mentalidad en Acción"
+    information={`The blog is used to display AstroWind documentation.
+                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro v6 + Tailwind CSS v4.
+                        Astro is a very interesting technology. Thanks.
+                `}
+  />
 </Layout>
