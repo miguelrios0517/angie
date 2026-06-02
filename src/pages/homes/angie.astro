@@ -54,7 +54,7 @@ const metadata = {
   <Hero2
     tagline="Coaching Personal Online"
     title="Consigue una Mente en Calma y la Confianza para Diseñar tu Futuro"
-    subtitle="Transforma la saturación mental y la duda constante en una seguridad inquebrantable con herramientas prácticas que sí funcionan en el día a día."
+    subtitle="Transforma la saturacaión mental y la duda constante en una seguridad inquebrantable con herramientas prácticas que sí funcionan en el día a día."
     actions={[
       { variant: 'primary', text: 'Reservar Cita', href: '#', icon: 'tabler:square-rounded-arrow-right' },
       { text: 'Ver Programa', href: '#' },
@@ -67,7 +67,11 @@ const metadata = {
 
   <!-- Note Widget ******************* -->
 
-  <Note title="Angie Wong:" description="Coach & Experta en PNL con 18 años de trayectoria" />
+  <Note
+    title="Angie Wong:"
+    description="Coach & Experta en PNL con 18 años de trayectoria"
+    backgroundColor="section-background-dark "
+  />
 
   <!-- Features2 Widget ************** -->
 
@@ -97,7 +101,7 @@ const metadata = {
     ]}
   >
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-mist-grey dark:bg-transparent"></div>
     </Fragment>
   </Features2>
 
@@ -149,15 +153,17 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Conoce a tu Coach: Angie Wong</h2>
-      <p>
+      <h2 class="text-primary-navy text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Conoce a tu Coach: Angie Wong
+      </h2>
+      <p class="text-charcoal">
         Hola, soy Angie Wong, coach certificada en Neurolingüística, especialista en el bienestar emocional y apasionada
         por el crecimiento humano. Con más de 15 años de experiencia acompañando a personas a superar desafíos y liderar
         sus vidas, combino mi formación en psicología del bienestar con certificaciones internacionales en PNL Avanzada,
         EFT Tapping e Hipnosis Ericksoniana.
       </p>
       <br />
-      <p>
+      <p class="text-charcoal">
         Mi propósito no es darte respuestas genéricas, sino ofrecerte un espacio seguro y virtual donde diseñemos las
         herramientas exactas que necesitas para alcanzar tus metas y vivir con total coherencia. Demos el primer paso
         juntos y empecemos a construir tu cambio hoy mismo.
@@ -166,7 +172,7 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-canvas-white dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
@@ -223,6 +229,7 @@ const metadata = {
     isReversed
     tagline="Coaching Personal Online"
     title="Elige tu Camino de Transformación (100% Virtual)"
+    classes={{ container: 'services' }}
     items={[
       {
         title: 'Claridad en un Clic',
@@ -246,14 +253,14 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+      <h3 class="text-primary-navy text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
         Sesión Individual/Pareja (50 minutos)
       </h3>
       Espacio dinámico para resolver bloqueos inmediatos, calibrar tus emociones o alinear metas en tu relación de forma online.
     </Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-mist-grey dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
@@ -283,14 +290,14 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+      <h3 class="text-primary-navy text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
         Programa Neuro-Alquimia (12 Semanas)
       </h3>
       Viaje estructurado de 12 semanas para reprogramar tu software mental, dominar tus emociones y consolidar tu auto-maestría.
     </Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-mist-grey dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
@@ -298,6 +305,9 @@ const metadata = {
 
   <Content
     isReversed
+    classes={{
+      wrapper: 'section-background-gray',
+    }}
     isAfterContent
     items={[
       {
@@ -322,12 +332,14 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Clases y Grupos de Enfoque</h3>
+      <h3 class="text-primary-navy text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Clases y Grupos de Enfoque
+      </h3>
       Talleres interactivos en vivo para dominar el estrés y acelerar tu crecimiento personal a través del espejo colectivo.
     </Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-mist-grey dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
@@ -371,7 +383,11 @@ const metadata = {
       href: 'https://github.com/arthelokyo/astrowind',
       icon: 'tabler:chevron-right',
     }}
-  />
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-canvas-white dark:bg-transparent"></div>
+    </Fragment>
+  </Testimonials>
 
   <!-- FAQs Widget ******************* -->
 
@@ -412,7 +428,11 @@ const metadata = {
           "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
       },
     ]}
-  />
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-mist-grey dark:bg-transparent"></div>
+    </Fragment>
+  </FAQs>
 
   <!-- Stats Widget ****************** -->
 
@@ -423,7 +443,11 @@ const metadata = {
       { title: 'Forks', amount: '10.3K' },
       { title: 'Users', amount: '48.4K' },
     ]}
-  />
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-canvas-white dark:bg-transparent"></div>
+    </Fragment>
+  </Stats>
 
   <!-- CallToAction Widget *********** -->
 
@@ -444,6 +468,10 @@ const metadata = {
       El cambio profundo que tanto buscas está esperándote justo al otro <br class="hidden md:inline" />lado de una sola
       decisión.
     </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-canvas-white dark:bg-transparent"></div>
+    </Fragment>
   </CallToAction>
 
   <!-- HighlightedPosts Widget ******* -->
@@ -454,5 +482,9 @@ const metadata = {
                         Each new article will be an important step that you will need to know to be an expert in creating a website using Astro v6 + Tailwind CSS v4.
                         Astro is a very interesting technology. Thanks.
                 `}
-  />
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-mist-grey dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
 </Layout>

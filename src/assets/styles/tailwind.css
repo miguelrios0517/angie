@@ -7,17 +7,35 @@
 @custom-variant intersect (&:not([no-intersect]));
 
 @theme {
+  /* --- Core Design System Colors --- */
+  --color-primary-navy: #1e295d;
+  --color-accent-purple: #3b2d70;
+  --color-periwinkle: #6b7cb4;
+  --color-canvas-white: #f7f9fc;
+  --color-mist-grey: #e6ecf5;
+  --color-card-white: #ffffff;
+  --color-charcoal: #2c3a4b;
+
+  /* --- Original Variable Mappings (Mapping to design tokens) --- */
   --color-primary: var(--aw-color-primary);
   --color-secondary: var(--aw-color-secondary);
   --color-accent: var(--aw-color-accent);
   --color-default: var(--aw-color-text-default);
   --color-muted: var(--aw-color-text-muted);
 
-  --font-sans:
+  /* --- Elegant Variable Font Overrides --- */
+  --font-body: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Playfair Display', ui-serif, Georgia, serif;
+
+  /* Keep these as fallbacks just in case your template scripts expect them */
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-heading);
+
+  /* --font-sans:
     'var(--aw-font-sans, ui-sans-serif)', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol', 'Noto Color Emoji';
   --font-serif: 'var(--aw-font-serif, ui-serif)', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
-  --font-heading: 'var(--aw-font-heading, ui-sans-serif)', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'var(--aw-font-heading, ui-sans-serif)', ui-sans-serif, system-ui, sans-serif; */
 
   --animate-fade: fadeInUp 1s both;
 
@@ -58,11 +76,11 @@
 }
 
 @utility btn-primary {
-  @apply btn font-semibold bg-primary text-white border-primary hover:bg-secondary hover:border-secondary hover:text-white dark:text-white dark:bg-primary dark:border-primary dark:hover:border-secondary dark:hover:bg-secondary;
+  @apply btn font-semibold bg-accent-purple text-white border-accent-purple hover:bg-primary-navy hover:border-secondary hover:text-white dark:text-white dark:bg-primary dark:border-primary dark:hover:border-secondary dark:hover:bg-secondary;
 }
 
 @utility btn-secondary {
-  @apply btn;
+  @apply btn text-charcoal;
 }
 
 @utility btn-tertiary {
@@ -114,4 +132,99 @@
 
 .dd *:first-child {
   margin-top: 0;
+}
+
+/* ==========================================================================
+   CUSTOM STYLES
+   ========================================================================== */
+
+/* Global Canvas Styling */
+body {
+  font-family: var(--font-body);
+  font-weight: 400; /* Regular weight for clean text parsing */
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2c3a4b; /* Soft Charcoal instead of stark black */
+  background-color: #f7f9fc; /* Alabaster White background */
+}
+
+/* Headings with Playfair Display */
+h1 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+/* LOCAL VARIABLE FONT DECLARATIONS */
+
+/* --- Playfair Display (Headings) --- */
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype-variations');
+  font-weight: 100 900; /* Enables all weights dynamically */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../assets/fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf')
+    format('truetype-variations');
+  font-weight: 100 900;
+  font-style: italic; /* Maps your italic variable file */
+  font-display: swap;
+}
+
+/* --- Plus Jakarta Sans (Body & UI Elements) --- */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('../assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf') format('truetype-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('../assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Italic-VariableFont_wght.ttf')
+    format('truetype-variations');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+.section-background-gray {
+  background-color: var(--color-mist-grey);
+}
+
+.section-background-white {
+  background-color: var(--color-canvas-white);
+}
+
+.section-background-dark {
+  background-color: var(--color-primary-navy);
+}
+
+.services > div:first-child h2 {
+  color: var(--color-purple-accent);
+}
+.services > div:first-child p {
+  color: var(--color-periwinkle);
+}
+
+.services > div:nth-child(2) p {
+  color: var(--color-charcoal);
 }

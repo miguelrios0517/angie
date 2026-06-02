@@ -38,6 +38,7 @@ const columnsClass =
   id={id}
   isDark={isDark}
   containerClass={`max-w-7xl mx-auto ${isAfterContent ? 'pt-0 md:pt-0 lg:pt-0' : ''} ${classes?.container ?? ''}`}
+  wrapperClass=`${classes?.wrapper ?? ''}`
   bg={bg}
 >
   <Headline
@@ -77,13 +78,16 @@ const columnsClass =
                     </div>
                     <div class="mt-0.5">
                       {itemTitle && (
-                        <h3 class="text-lg font-medium leading-6 dark:text-white ml-2 rtl:ml-0 rtl:mr-2">
+                        <h3 class="text-primary-navy text-lg font-medium leading-6 dark:text-white ml-2 rtl:ml-0 rtl:mr-2">
                           {itemTitle}
                         </h3>
                       )}
                       {description && (
                         <p
-                          class:list={[{ 'mt-3': itemTitle }, 'text-muted dark:text-slate-400 ml-2 rtl:ml-0 rtl:mr-2']}
+                          class:list={[
+                            { 'mt-3': itemTitle },
+                            'dark:text-slate-400 ml-2 rtl:ml-0 rtl:mr-2 text-charcoal/90',
+                          ]}
                           set:html={description}
                         />
                       )}
