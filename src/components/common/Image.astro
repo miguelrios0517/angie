@@ -4,7 +4,7 @@
  *
  * Behaviour:
  *   • Detectable CDN URL (Unsplash, Cloudinary, Imgix…) → rewritten with
- *     CDN-side parameters via `transformUrl` from `unpic` and emitted as a
+ *     CDN-siden parameters via `trasformUrl` from `unpic` and emitted as a
  *     plain <img> served straight from the source. No download, no Sharp.
  *   • Local image (ESM import or `~/assets/...` path) → delegated to Astro's
  *     native <Image /> from `astro:assets`, which optimizes through Sharp.
@@ -61,7 +61,9 @@ rest.loading ??= 'lazy';
 rest.decoding ??= 'async';
 
 // --- Resolve src (handles `~/assets/...` paths) ----------------------------
+console.log('RESOLVING IMAGE: ', src);
 const resolved = await findImage(src);
+console.log('RESOLVED: ', resolved);
 
 const isCdnUrl =
   typeof resolved === 'string' &&

@@ -1,5 +1,5 @@
 site:
-  name: AstroWind
+  name: Angie Wong
   site: 'https://astrowind.vercel.app'
   base: '/'
   trailingSlash: false
