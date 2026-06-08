@@ -126,11 +126,11 @@ export const angieHeader = {
   links: [
     {
       text: 'Inicio',
-      href: getPermalink('/angie'),
+      href: getPermalink('/'),
     },
     {
       text: 'Sobre Angie',
-      href: getPermalink('/angie'),
+      href: getPermalink('/sobre-angie'),
     },
     {
       text: 'Servicios',
