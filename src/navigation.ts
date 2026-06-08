@@ -122,6 +122,41 @@ export const headerData = {
   actions: [{ text: 'Download', href: 'https://github.com/arthelokyo/astrowind', target: '_blank' }],
 };
 
+export const angieHeader = {
+  links: [
+    {
+      text: 'Inicio',
+      href: getPermalink('/angie'),
+    },
+    {
+      text: 'Sobre Angie',
+      href: getPermalink('/angie'),
+    },
+    {
+      text: 'Servicios',
+      links: [
+        {
+          text: 'Sesión Individual (50 min)',
+          href: getPermalink('/sesion-individual'),
+        },
+        {
+          text: 'Programa de 12 Semanas',
+          href: getPermalink('/programa-12-semanas'),
+        },
+        {
+          text: 'Talleres y Grupos',
+          href: getPermalink('/talleres-grupos'),
+        },
+      ],
+    },
+    {
+      text: 'Contacto',
+      href: getPermalink('/contacto'),
+    },
+  ],
+  actions: [{ text: 'Reservar Sesión', href: getPermalink('/contacto'), target: '_blank' }],
+};
+
 export const footerData = {
   links: [
     {
