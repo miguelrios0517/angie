@@ -5,6 +5,7 @@ import Features2 from '~/components/widgets/Features2.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 import Layout from '~/layouts/PageLayoutAngie.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
 
 const metadata = {
   title: 'Services',
@@ -15,115 +16,36 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="Services"
-    title="Elevate your projects with our stunning templates"
-    subtitle="Explore our meticulously crafted templates tailored to various industries and purposes. From captivating presentations to functional website designs, we offer the tools you need to succeed."
-    actions={[{ variant: 'primary', target: '_blank', text: 'Start exploring', href: '/' }]}
+    tagline="Servicios"
+    title="Talleres y Sesiones Grupales"
+    subtitle="Tu espacio seguro de escucha, transformación y crecimiento, estés donde estés."
+    actions={[{ variant: 'primary', text: 'Explorar servicio', href: '/talleres-grupos#intro' }]}
     image={{
       src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
       alt: 'AstroWind Hero Image',
     }}
   />
 
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Explore our diverse templates"
-    subtitle="Discover our selection below to streamline and elevate your projects."
-    columns={3}
-    items={[
-      {
-        title: 'Educational',
-        description:
-          'By harmonizing instructional design and visual appeal, templates streamline content creation for varied materials, expediting development and cultivating engaging educational spaces.',
-        icon: 'tabler:school',
-      },
-      {
-        title: 'Interior Design',
-        description:
-          'Crafting functional, visually appealing spaces for residential and commercial use. Templates emphasize layout, colors, and furniture setups, offering a versatile toolkit for your design vision.',
-        icon: 'tabler:home-star',
-      },
-      {
-        title: 'Photography',
-        description: `Empowering photographers, our templates facilitate captivating storytelling. With a keen focus on layout, galleries, and typography, they cater to both professionals and enthusiasts.`,
-        icon: 'tabler:photo',
-      },
-      {
-        title: 'E-commerce',
-        description:
-          'Developing engaging online stores, our E-commerce templates ensure a dynamic presence to effectively showcase products. Ideal for startups or revamps.',
-        icon: 'tabler:shopping-cart',
-      },
-      {
-        title: 'Blog',
-        description:
-          'With attention to typography, these templates empower effective content presentation for writers at any stage, ensuring visually engaging and user-friendly blogs.',
-        icon: 'tabler:article',
-      },
-      {
-        title: 'Business',
-        description:
-          'Providing polished options for effective visual communication, these templates empower both startups and established companies for a professional brand presence.',
-        icon: 'tabler:building-store',
-      },
-      {
-        title: 'Branding',
-        description:
-          'Offering pre-designed elements for a consistent brand identity, including logos and marketing materials. Ideal for new ventures or revamps.',
-        icon: 'tabler:arrow-big-up-lines',
-      },
-      {
-        title: 'Medical',
-        description: `From presentations to patient forms, these tools enhance communication effectiveness for healthcare professionals. Ideal for medical practices and research pursuits.`,
-        icon: 'tabler:vaccine',
-      },
-      {
-        title: 'Fashion Design',
-        description:
-          'With attention to detail, customization, and contemporary design, they empower designers to showcase ideas cohesively. Ideal for all levels of designers.',
-        icon: 'tabler:tie',
-      },
-    ]}
-  />
-
   <!-- Content Widget **************** -->
 
   <Content
+    id="intro"
     isReversed
-    items={[
-      {
-        title: 'High-Quality Designs',
-        description:
-          'Our templates feature top-tier designs that ensure a professional and polished appearance for your projects.',
-        icon: 'tabler:wand',
-      },
-      {
-        title: 'Customization Tools',
-        description:
-          'Tailor each template to your unique needs with user-friendly customization tools that let you personalize colors, fonts, and content.',
-        icon: 'tabler:settings',
-      },
-      {
-        title: 'Pre-Designed Elements',
-        description:
-          'Save time and effort with our ready-to-use elements, including graphics, icons, and layouts that enhance the visual appeal of your creations.',
-        icon: 'tabler:presentation',
-      },
-      {
-        title: 'Preview and Mockup Views',
-        description:
-          'Visualize the final outcome before making any changes using our preview and mockup views, ensuring your projects meet your expectations.',
-        icon: 'tabler:carousel-horizontal',
-      },
-    ]}
     image={{
       src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
       alt: 'Features Image',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Main Features</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Talleres y Sesiones Grupales<span class="font-normal"></span>
+      </h3>
+      <p>
+        A veces, el día a día nos absorbe y nos olvidamos de dedicar tiempo a lo más importante: nosotros mismos y
+        nuestras relaciones.<br /><br />Mis sesiones online de 50 minutos están diseñadas para ofrecerte un espacio de
+        absoluta confidencialidad, empatía y herramientas prácticas. No importa si buscas claridad a nivel personal o si
+        deseas fortalecer el vínculo con tu pareja; aquí encontrarás el apoyo profesional que necesitas.
+      </p>
     </Fragment>
   </Content>
 
@@ -133,27 +55,23 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Time Savings',
-        description:
-          'Streamline your workflow, enabling you to create stunning materials efficiently and allocate more time to your core tasks.',
+        title: 'El estrés o agotamiento afecta tu día a día',
+        description: 'Vives en alerta constante, el ruido mental no te deja descansar y la rutina te sobrepasa.',
         icon: 'tabler:clock',
       },
       {
-        title: 'Professional Appearance',
-        description:
-          'Elevate your projects with the polished and sophisticated look that our templates provide, making a lasting impression on your audience.',
+        title: 'Sientes estancamiento y te cuesta decidir',
+        description: 'Caminas en círculos, perdiste la motivación y el miedo a equivocarte te paraliza.',
         icon: 'tabler:school',
       },
       {
-        title: 'Cost-Efficiency',
-        description:
-          'Benefit from cost savings by avoiding the need for custom design work, as our templates offer professional-grade designs at a fraction of the cost.',
+        title: 'Tienes baja autoestima o te cuesta poner límites',
+        description: 'Dudas de tu valor, te cuesta decir "no" por culpa y te postergas por complacer a los demás.',
         icon: 'tabler:coin',
       },
       {
-        title: 'Instant Download',
-        description:
-          'Enjoy immediate access to your chosen templates upon purchase, enabling you to begin working on your projects without delay.',
+        title: 'Vives un cambio o duelo difícil de asimilar',
+        description: 'Te cuesta aceptar tu realidad tras una ruptura, mudanza o pérdida, cargando con todo a solas.',
         icon: 'tabler:file-download',
       },
     ]}
@@ -163,14 +81,53 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Benefits</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">¿Para quién es esta sesión?</h3>
+      <p>Este espacio está diseñado para ti si te identificas con alguna de estas situaciones:</p>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'Desahogo y validación',
+        description:
+          'Un espacio seguro donde puedes expresarte sin filtros ni miedo a ser juzgado/a. Sentirte escuchado/a es el primer paso para sanar.',
+        icon: 'tabler:wand',
+      },
+      {
+        title: 'Comprensión del problema',
+        description:
+          'Identificamos el origen de tus bloqueos o el porqué de tus reacciones actuales. Le ponemos nombre a lo que te pasa.',
+        icon: 'tabler:settings',
+      },
+      {
+        title: 'Herramientas prácticas',
+        description:
+          'No te vas con las manos vacías. Nos enfocamos en soluciones y estrategias psicológicas que puedes empezar a aplicar esa misma semana en tu vida cotidiana.',
+        icon: 'tabler:presentation',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+      alt: 'Features Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">¿Qué lograremos en 50 minutos?</h3>
+      <p>
+        Aunque cada proceso es único y se adapta a tu ritmo, en nuestras sesiones individuales nos enfocamos en tres
+        pilares:
+      </p>
     </Fragment>
   </Content>
 
   <!-- Testimonials Widget *********** -->
 
   <Testimonials
-    title="Words from real customers"
+    title="Lo que dicen quienes ya han dado el paso"
     testimonials={[
       {
         testimonial: `The designs are not only visually appealing but also highly professional. The templates have saved me a significant amount of time while helping me make a lasting impression on my clients.`,
@@ -208,17 +165,50 @@ const metadata = {
     }}
   />
 
+  <FAQs
+    title="Preguntas Frecuentes"
+    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
+    tagline="FAQs"
+    classes={{ container: 'max-w-6xl' }}
+    items={[
+      {
+        title: '¿Cómo sé si necesito una sesión individual o el programa de 12 semanas?',
+        description:
+          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+      },
+      {
+        title: '¿Las sesiones virtuales son igual de efectivas que las presenciales?',
+        description:
+          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+      },
+      {
+        title: 'How to install the Astro + Tailwind CSS template?',
+        description:
+          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+      },
+      {
+        title: "What's something that you don't understand?",
+        description:
+          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-mist-grey dark:bg-transparent"></div>
+    </Fragment>
+  </FAQs>
+
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
     actions={[
       {
         variant: 'primary',
-        text: 'Start exploring',
+        text: 'Agendar mi Sesión',
         href: '/',
       },
     ]}
-    title="Dive into our template collection"
-    subtitle="Whether you're in business, design, or education, our templates are here to elevate your projects."
+    title="Da el primer paso hoy mismo"
+    subtitle="No tienes que esperar a que la situación te supere para empezar a cuidarte. Regálate estos 50 minutos para ti."
   />
 </Layout>

@@ -154,7 +154,7 @@ export const angieHeader = {
       href: getPermalink('/contacto'),
     },
   ],
-  actions: [{ text: 'Reservar Sesión', href: getPermalink('/contacto'), target: '_blank' }],
+  actions: [{ text: 'Reservar Sesión', href: 'https://wa.me/15551234567' }],
 };
 
 export const footerData = {
