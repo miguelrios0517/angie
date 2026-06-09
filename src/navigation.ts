@@ -154,7 +154,13 @@ export const angieHeader = {
       href: getPermalink('/contacto'),
     },
   ],
-  actions: [{ text: 'Reservar Sesión', href: 'https://wa.me/15551234567' }],
+  actions: [
+    {
+      text: 'Reservar Sesión',
+      target: '_blank',
+      href: 'https://wa.me/51987717886?text=Hola%20Psic.%20Angie%2C%20me%20gustar%C3%ADa%20solicitar%20la%20consulta%20gratuita%20de%2010%20minutos%20para%20conocer%20m%C3%A1s%20sobre%20las%20sesiones.',
+    },
+  ],
 };
 
 export const footerData = {

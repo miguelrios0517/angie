@@ -56,8 +56,14 @@ const metadata = {
     title="Encuentra Calma Mental y Claridad para Avanzar"
     subtitle="Te acompaño a comprender tus pensamientos, reducir el estrés y fortalecer tu bienestar emocional para que puedas vivir con más tranquilidad, confianza y propósito."
     actions={[
-      { variant: 'primary', text: 'Reservar Cita', href: '#', icon: 'tabler:square-rounded-arrow-right' },
-      { text: 'Ver Programa', href: '#' },
+      {
+        variant: 'primary',
+        text: 'Reservar Cita',
+        target: '_blank',
+        href: 'https://wa.me/51987717886?text=Hola%20Psic.%20Angie%2C%20me%20gustar%C3%ADa%20solicitar%20la%20consulta%20gratuita%20de%2010%20minutos%20para%20conocer%20m%C3%A1s%20sobre%20las%20sesiones.',
+        icon: 'tabler:square-rounded-arrow-right',
+      },
+      { text: 'Ver Programa', href: '#servicios' },
     ]}
     image={{
       src: '~/assets/images/angiewong2.jpeg',
@@ -231,6 +237,7 @@ const metadata = {
   <Content
     isReversed
     tagline="Servicios"
+    id="servicios"
     title="Tu Camino Hacia el Bienestar"
     classes={{ container: 'services' }}
     items={[
