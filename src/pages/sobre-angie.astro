@@ -26,7 +26,14 @@ const metadata = {
     id="hero"
     title="Psic. Angie Wong"
     tagline="Sobre Angie"
-    actions={[{ variant: 'primary', text: 'Agendar Sesión Virtual', href: getPermalink('/contact#form') }]}
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Agendar Sesión Virtual',
+        target: '_blank',
+        href: 'https://wa.me/51987717886?text=Hola%20Psic.%20Angie%2C%20me%20gustar%C3%ADa%20solicitar%20la%20consulta%20gratuita%20de%2010%20minutos%20para%20conocer%20m%C3%A1s%20sobre%20las%20sesiones.',
+      },
+    ]}
   >
     <Fragment slot="subtitle">
       Psicóloga Clínica, Coach Mental & Master en PNL CPP. 14690. <br /><br /> Mi objetivo es brindar un enfoque integral,
@@ -380,7 +387,8 @@ const metadata = {
       {
         variant: 'primary',
         text: 'Solicitar Consulta Gratuita',
-        href: '/',
+        target: '_blank',
+        href: 'https://wa.me/51987717886?text=Hola%20Psic.%20Angie%2C%20me%20gustar%C3%ADa%20solicitar%20la%20consulta%20gratuita%20de%2010%20minutos%20para%20conocer%20m%C3%A1s%20sobre%20las%20sesiones.',
       },
     ]}
   />
