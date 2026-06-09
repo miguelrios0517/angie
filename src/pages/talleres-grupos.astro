@@ -18,7 +18,7 @@ const metadata = {
   <Hero
     tagline="Servicios"
     title="Talleres y Sesiones Grupales"
-    subtitle="Tu espacio seguro de escucha, transformación y crecimiento, estés donde estés."
+    subtitle="Transformación colectiva: Talleres y clases en grupo que inspiran el cambio real."
     actions={[{ variant: 'primary', text: 'Explorar servicio', href: '/talleres-grupos#intro' }]}
     image={{
       src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
@@ -41,38 +41,36 @@ const metadata = {
         Talleres y Sesiones Grupales<span class="font-normal"></span>
       </h3>
       <p>
-        A veces, el día a día nos absorbe y nos olvidamos de dedicar tiempo a lo más importante: nosotros mismos y
-        nuestras relaciones.<br /><br />Mis sesiones online de 50 minutos están diseñadas para ofrecerte un espacio de
-        absoluta confidencialidad, empatía y herramientas prácticas. No importa si buscas claridad a nivel personal o si
-        deseas fortalecer el vínculo con tu pareja; aquí encontrarás el apoyo profesional que necesitas.
+        Espacios de crecimiento compartido, reflexión profunda y herramientas prácticas para transformar el bienestar
+        emocional, personal y profesional en comunidad.<br /><br />El crecimiento personal no tiene por qué ser un
+        camino solitario. Las sesiones grupales y los talleres ofrecen una dinámica única donde el aprendizaje se
+        potencia a través de las experiencias compartidas, la resonancia con otros y el soporte de un entorno seguro y
+        confidencial guiado por un profesional.
       </p>
     </Fragment>
   </Content>
-
   <!-- Content Widget **************** -->
 
   <Content
     isAfterContent
     items={[
       {
-        title: 'El estrés o agotamiento afecta tu día a día',
-        description: 'Vives en alerta constante, el ruido mental no te deja descansar y la rutina te sobrepasa.',
+        title: 'Validación',
+        description:
+          'Descubrir que otros comparten inquietudes y desafíos similares alivia el aislamiento y fortalece la autocompasión',
         icon: 'tabler:clock',
       },
       {
-        title: 'Sientes estancamiento y te cuesta decidir',
-        description: 'Caminas en círculos, perdiste la motivación y el miedo a equivocarte te paraliza.',
+        title: 'Perspectiva',
+        description:
+          'Escuchar diferentes puntos de vista y soluciones enriquece el propio repertorio de afrontamiento y resolución de problemas.',
         icon: 'tabler:school',
       },
       {
-        title: 'Tienes baja autoestima o te cuesta poner límites',
-        description: 'Dudas de tu valor, te cuesta decir "no" por culpa y te postergas por complacer a los demás.',
+        title: 'Acción',
+        description:
+          'El compromiso con un grupo impulsa la responsabilidad personal y la aplicación real de las herramientas aprendidas.',
         icon: 'tabler:coin',
-      },
-      {
-        title: 'Vives un cambio o duelo difícil de asimilar',
-        description: 'Te cuesta aceptar tu realidad tras una ruptura, mudanza o pérdida, cargando con todo a solas.',
-        icon: 'tabler:file-download',
       },
     ]}
     image={{
@@ -81,8 +79,15 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">¿Para quién es esta sesión?</h3>
-      <p>Este espacio está diseñado para ti si te identificas con alguna de estas situaciones:</p>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        ¿Por qué elegir el formato grupal?
+      </h3>
+      <p>
+        A diferencia del proceso individual, el trabajo en grupo actúa como un espejo amplificado. Permite a los
+        participantes identificar patrones comunes, normalizar sus procesos emocionales y adquirir herramientas
+        prácticas mediante dinámicas interactivas y vivenciales. Es un entorno idóneo para consolidar habilidades de
+        comunicación, resiliencia y autoconocimiento.
+      </p>
     </Fragment>
   </Content>
 
@@ -92,21 +97,21 @@ const metadata = {
     isReversed
     items={[
       {
-        title: 'Desahogo y validación',
+        title: 'Regulación Emocional y Mindfulness',
         description:
-          'Un espacio seguro donde puedes expresarte sin filtros ni miedo a ser juzgado/a. Sentirte escuchado/a es el primer paso para sanar.',
+          'Herramientas prácticas para identificar, comprender y canalizar el estrés y la ansiedad cotidiana desde la atención plena.',
         icon: 'tabler:wand',
       },
       {
-        title: 'Comprensión del problema',
+        title: 'Crecimiento Personal y Transiciones',
         description:
-          'Identificamos el origen de tus bloqueos o el porqué de tus reacciones actuales. Le ponemos nombre a lo que te pasa.',
+          'Espacios de claridad enfocados en momentos de cambio, desmontaje de creencias limitantes y diseño de metas alineadas con tu propósito.',
         icon: 'tabler:settings',
       },
       {
-        title: 'Herramientas prácticas',
+        title: 'Vínculos, Asertividad y Límites',
         description:
-          'No te vas con las manos vacías. Nos enfocamos en soluciones y estrategias psicológicas que puedes empezar a aplicar esa misma semana en tu vida cotidiana.',
+          'Encuentros dedicados a mejorar la comunicación, construir relaciones más saludables y aprender a establecer límites firmes sin culpa.',
         icon: 'tabler:presentation',
       },
     ]}
@@ -116,10 +121,50 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">¿Qué lograremos en 50 minutos?</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Nuestras Líneas de Trabajo</h3>
+      <p>Exploramos el crecimiento personal y el bienestar emocional a través de tres ejes temáticos esenciales:</p>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    items={[
+      {
+        title: 'Encuadre Conceptual',
+        description:
+          'Una breve introducción teórica, clara y sin tecnicismos, para entender el "por qué" de lo que trabajamos.',
+        icon: 'tabler:wand',
+      },
+      {
+        title: 'Dinámicas Experienciales',
+        description: 'Ejercicios prácticos e interactivos para integrar el contenido de manera activa.',
+        icon: 'tabler:settings',
+      },
+      {
+        title: 'Espacio de Cocuración',
+        description:
+          'Puesta en común (siempre voluntaria) para resolver dudas, compartir hallazgos y procesar la experiencia bajo supervisión profesional.',
+        icon: 'tabler:presentation',
+      },
+      {
+        title: 'Herramientas de Integración',
+        description:
+          'Recursos complementarios o guías de trabajo para que puedas seguir practicando e interiorizando lo aprendido durante la semana.',
+        icon: 'tabler:presentation',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+      alt: 'Features Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Metodología de Trabajo</h3>
       <p>
-        Aunque cada proceso es único y se adapta a tu ritmo, en nuestras sesiones individuales nos enfocamos en tres
-        pilares:
+        Cada taller o ciclo grupal se fundamenta en un marco teórico científico y riguroso (combinando la Psicología
+        Cognitivo-Conductual, el enfoque Humanista y el Coaching), estructurado de forma digerible y vivencial. Nuestros
+        encuentros suelen estructurarse en cuatro pilares:
       </p>
     </Fragment>
   </Content>
@@ -127,7 +172,7 @@ const metadata = {
   <!-- Testimonials Widget *********** -->
 
   <Testimonials
-    title="Lo que dicen quienes ya han dado el paso"
+    title="Lo que dicen quienes han participado"
     testimonials={[
       {
         testimonial: `The designs are not only visually appealing but also highly professional. The templates have saved me a significant amount of time while helping me make a lasting impression on my clients.`,
@@ -167,29 +212,29 @@ const metadata = {
 
   <FAQs
     title="Preguntas Frecuentes"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
+    subtitle="Respuestas rápidas a las dudas más comunes sobre nuestros espacios grupales."
     tagline="FAQs"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: '¿Cómo sé si necesito una sesión individual o el programa de 12 semanas?',
+        title: '¿Cómo sé si es mejor para mí un proceso individual o uno grupal?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          'El grupo es ideal para adquirir herramientas y compartir vivencias. Si buscas tratar un tema muy específico o de alta complejidad diagnóstica, la terapia individual es el espacio idóneo. Ambos formatos son complementarios.',
       },
       {
-        title: '¿Las sesiones virtuales son igual de efectivas que las presenciales?',
+        title: 'Me da un poco de timidez hablar en público, ¿es obligatorio participar?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          'No, el respeto a tu ritmo es fundamental. Compartir experiencias es siempre voluntario. Puedes beneficiarte de las dinámicas y escuchar a los demás sin necesidad de exponer detalles que prefieras reservar',
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: '¿Cuál es el perfil de la persona que facilita estos espacios?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          'Son guiados por Angie Wong, quien combina la rigurosidad y base científica de la psicología clínica con el dinamismo y la orientación a metas del coaching estratégico para ofrecer una experiencia práctica.',
       },
       {
-        title: "What's something that you don't understand?",
+        title: '¿Cuántas personas forman cada grupo?',
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          'Para garantizar que el espacio sea seguro, confidencial y que todos reciban una atención de calidad, trabajamos con cupos limitados, manteniendo un máximo de 10 a 12 participantes por ciclo.',
       },
     ]}
   >
@@ -204,11 +249,11 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Agendar mi Sesión',
+        text: 'Consultar próximos talleres',
         href: '/',
       },
     ]}
-    title="Da el primer paso hoy mismo"
-    subtitle="No tienes que esperar a que la situación te supere para empezar a cuidarte. Regálate estos 50 minutos para ti."
+    title="¿Te interesa participar en nuestro próximo espacio grupal?"
+    subtitle="Si quieres conocer las temáticas activas, las próximas fechas confirmadas o te interesa llevar uno de estos talleres a tu organización, ponte en contacto para recibir la información actualizada."
   />
 </Layout>

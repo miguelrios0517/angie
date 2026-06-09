@@ -23,14 +23,14 @@ const metadata = {
 
   <Hero
     id="hero"
-    title="Sarah Johnson"
-    tagline="Personal Web Demo"
-    actions={[{ variant: 'primary', text: 'Hire me', href: getPermalink('/contact#form') }]}
+    title="Psic. Angie Wong"
+    tagline="Sobre Angie"
+    actions={[{ variant: 'primary', text: 'Agendar Sesión Virtual', href: getPermalink('/contact#form') }]}
   >
     <Fragment slot="subtitle">
-      I'm a Graphic Designer passionate about crafting visual stories. <br /> With 5 years of experience and a degree from
-      New York University's School of Design. I infuse vitality into brands and designs, transforming concepts into captivating
-      realities.
+      Psicóloga Clínica, Coach Mental & Master en PNL CPP. 14690. <br /><br /> Mi objetivo es brindar un enfoque integral,
+      compasivo e innovador en el cuidado de la salud mental, adaptando cada herramienta a la historia y necesidades únicas
+      de mis pacientes.
     </Fragment>
   </Hero>
 
@@ -72,18 +72,27 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h2>
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Perfil Profesional (Biografía Narrativa)
+      </h2>
       <p>
-        Welcome to my creative journey. My work is a testament to my commitment to bringing ideas to life, where each
-        pixel becomes a brushstroke in the canvas of imagination.
+        Soy Licenciada en Psicología con un enfoque apasionado en guiar a las personas a superar desafíos emocionales y
+        de salud mental complejos, tales como la ansiedad, la depresión y los trastornos de personalidad.
       </p>
       <br />
       <p>
-        I find inspiration in the world around me, whether through the pages of a captivating novel, the intricate
-        details of typography, or the vibrant hues of nature during my outdoor escapades.
+        Mi práctica se distingue por fusionar la rigurosidad de la Psicología Clínica con el dinamismo estratégico de la
+        Programación Neurolingüística (PNL) y el Coaching. Cuento con maestrías en Psicología Clínica y de la Salud y en
+        Terapia del Bienestar Emocional (Madrid, España), lo que me permite abordar la salud mental desde una
+        perspectiva integral: conectando mente, cuerpo y emociones.
       </p>
       <br />
-      <p>If you're curious to dive deeper into my work, you can follow me:</p>
+      <p>
+        Además de mi trayectoria en consulta particular, he sido docente universitaria durante más de una década, una
+        experiencia clave que alimenta constantemente mi actualización profesional. Sin embargo, mi aprendizaje más
+        valioso proviene de la interacción diaria con mis pacientes y del compromiso mutuo hacia su transformación
+        duradera.
+      </p>
     </Fragment>
 
     <Fragment slot="bg">
@@ -95,19 +104,27 @@ const metadata = {
 
   <Steps
     id="resume"
-    title="Work experience"
+    title="Trayectoria Académica"
     items={[
       {
-        title:
-          'Graphic Designer <br /> <span class="font-normal">ABC Design Studio, New York, NY</span> <br /> <span class="text-sm font-normal">2021 - Present</span>',
-        description: `Collaborate with clients to understand design requirements and objectives. <br /> Develop branding solutions, including logos, color palettes, and brand guidelines. <br /> Design marketing materials such as brochures, posters, and digital assets. <br /> Create visually appealing user interfaces for websites and applications.`,
-        icon: 'tabler:briefcase',
+        title: `Máster en Terapia del Bienestar Emocional<br /> <span class="font-normal">CEU Universidad San Pablo (Madrid, España)</span> <br /> <span class="text-sm font-normal">2020 - 2021</span>`,
+        icon: 'tabler:school',
       },
       {
-        title:
-          'Junior Graphic Designer <br /> <span class="font-normal">XYZ Creative Agency, Los Angeles, CA</span> <br /> <span class="text-sm font-normal">2018 - 2021</span>',
-        description: `Assisted senior designers in creating design concepts and visual assets. <br /> Contributed to the development of brand identities and marketing collateral. <br /> Collaborated with the marketing team to ensure consistent design across campaigns. <br /> Gained hands-on experience in various design software and tools.`,
-        icon: 'tabler:briefcase',
+        title: `Maestría en Psicología Clínica y de la Salud<br /> <span class="font-normal">Universidad de San Martín de Porres</span> <br /> <span class="text-sm font-normal">2008 - 2010</span>`,
+        icon: 'tabler:school',
+      },
+      {
+        title: `Licenciatura en Psicología y Humanidade<br /> <span class="font-normal">Universidad Femenina del Sagrado Corazón (UNIFE)</span> <br /> <span class="text-sm font-normal">2000 - 2006</span>`,
+        icon: 'tabler:school',
+      },
+      {
+        title: `Certificación Internacional en Coaching Neurológico<br /> <span class="font-normal">Jamming Consultoría</span> <br /> <span class="text-sm font-normal">2017</span>`,
+        icon: 'tabler:school',
+      },
+      {
+        title: `Certificación Internacional en Gestión de la Innovación<br /> <span class="font-normal">Latam Coaching Network</span> <br /> <span class="text-sm font-normal">2018</span>`,
+        icon: 'tabler:school',
       },
     ]}
     classes={{ container: 'max-w-3xl' }}
@@ -117,15 +134,25 @@ const metadata = {
 
   <Steps
     id="resume"
-    title="Education"
+    title="Experiencia Clave"
     items={[
       {
-        title: `Master of Fine Arts in Graphic Design <br /> <span class="font-normal">New York University's School of Design</span> <br /> <span class="text-sm font-normal">2018 - 2020</span>`,
-        icon: 'tabler:school',
+        title:
+          'Consultorio Particular <br /> <span class="font-normal">Consulto Personal, Lima</span> <br /> <span class="text-sm font-normal">2007 - Actualidad</span>',
+        description: `Psicóloga Clínica y Coach orientada a adolescentes y adultos en manejo de estrés, crisis de pareja, ansiedad, depresión y trastornos de la conducta alimentaria (anorexia/bulimia).`,
+        icon: 'tabler:briefcase',
       },
       {
-        title: `Bachelor of Arts in Graphic Design <br /> <span class="font-normal">New York University's School of Design</span> <br /> <span class="text-sm font-normal">2014 - 2018</span>`,
-        icon: 'tabler:school',
+        title:
+          'Docencia Universitaria <br /> <span class="font-normal">Universidad Continental y Alas Peruanas, Lima</span> <br /> <span class="text-sm font-normal">2008 - 2021</span>',
+        description: `Profesora de pregrado y modalidades virtuales en la Universidad Continental y la Universidad Alas Peruanas, dictando asignaturas como Psicología Clínica, Técnicas Psicoterapéuticas y Psicología de la Motivación.`,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Investigación y Desarrollo Social <br /> <span class="font-normal">Miniesterio de Educacion, Lima</span> <br /> <span class="text-sm font-normal">2008 - 2021</span>',
+        description: `Evaluadora de proyectos educativos para el Ministerio de Educación y psicóloga de investigación de mercados en 360° Inteligencia de Mercados IBC.`,
+        icon: 'tabler:briefcase',
       },
     ]}
     classes={{ container: 'max-w-3xl' }}
@@ -134,46 +161,46 @@ const metadata = {
   <!-- Features3 Widget ************** -->
 
   <Features3
-    title="Skills"
-    subtitle="Discover the proficiencies that allow me to bring imagination to life through design."
+    title="Certificaciones & Habilidades Clave"
+    subtitle="Integración de herramientas clínicas y estratégicas para una transformación profunda."
     columns={3}
     defaultIcon="tabler:point-filled"
     items={[
       {
-        title: 'Graphic design',
-        description: 'Proficient in crafting visually appealing designs that convey messages effectively.',
+        title: 'EFT Tapping',
+        description: 'Liberación emocional para procesar bloqueos internos y reducir el estrés físico.',
       },
       {
-        title: 'Branding and identity',
-        description: 'Skilled at developing cohesive brand identities, including logos and brand guidelines.',
+        title: 'Programación Neurolingüística (PNL)',
+        description: 'Reestructuración de patrones de pensamiento y optimización de la comunicación interna.',
       },
       {
-        title: 'User-centered design',
-        description: 'Experienced in creating user-friendly interfaces and optimizing user experiences.',
+        title: 'Hipnosis Ericksoniana',
+        description: 'Modificación de conductas arraigadas mediante el acceso guiado al inconsciente.',
       },
       {
-        title: 'Adobe Creative Suite',
-        description: 'Skilled in using Photoshop, Illustrator, and InDesign to create and edit visual elements.',
+        title: 'Gestión de la Innovación',
+        description: 'Enfoque metodológico moderno y ágil para encontrar soluciones clínicas efectivas.',
       },
       {
-        title: 'Typography',
-        description: 'Adept in selecting and manipulating typefaces to enhance design aesthetics.',
+        title: 'Coaching Neurológico',
+        description: 'Potenciación de habilidades individuales para maximizar el rendimiento personal.',
       },
       {
-        title: 'Color theory',
-        description: 'Proficient in using color to evoke emotions and enhance visual harmony.',
+        title: 'Consultoría en PNL',
+        description: 'Diseño de estrategias personalizadas para superar creencias limitantes rápidamente.',
       },
       {
-        title: 'Print and digital design',
-        description: 'Knowledgeable in designing for both print materials and digital platforms.',
+        title: 'Coaching Metódico',
+        description: 'Acompañamiento enfocado en superar obstáculos y alcanzar metas individuales reales.',
       },
       {
-        title: 'Attention to detail',
-        description: 'Diligent in maintaining precision and quality in all design work.',
+        title: 'Enfoque Transpersonal',
+        description: 'Integración de la sombra junguiana y arquetipos para sanar la identidad profunda.',
       },
       {
-        title: 'Adaptability',
-        description: 'Quick to adapt to new design trends, technologies, and client preferences.',
+        title: 'Time Line Therapy®',
+        description: 'Desensibilización de eventos del pasado para liberar cargas emocionales flotantes.',
       },
     ]}
   />
@@ -182,36 +209,25 @@ const metadata = {
 
   <Content
     id="porfolio"
-    title="Elevating visual narratives"
-    subtitle="Embark on a design journey that surpasses pixels, entering a realm of imagination. Explore my portfolio, where passion and creativity converge to shape enthralling visual narratives."
+    title="Mi Metodología: ¿Cómo trabajo con la PNL?"
+    subtitle="Un laboratorio de transformación para reprogramar tu software mental. Fusiono precisión clínica y PNL para transformar el análisis del pasado en cambios medibles en tu identidad, hábitos y bienestar."
     isReversed
-    items={[
-      {
-        title: 'Description:',
-        description:
-          'Developed a comprehensive brand identity for a tech startup, Tech Innovators, specializing in disruptive innovations. The goal was to convey a modern yet approachable image that resonated with both corporate clients and tech enthusiasts.',
-      },
-      {
-        title: 'Role:',
-        description:
-          'Led the entire branding process from concept to execution. Created a dynamic logo that symbolized innovation, selected a vibrant color palette, and I designed corporate stationery, website graphics, and social media assets.',
-      },
-    ]}
     image={{
       src: 'https://images.unsplash.com/photo-1658248165252-71e116af1b34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80',
       alt: 'Tech Design Image',
     }}
-    callToAction={{
-      target: '_blank',
-      text: 'Go to the project',
-      icon: 'tabler:chevron-right',
-      href: '#',
-    }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 1: <br /><span class="text-2xl">Brand identity for tech innovators</span>
+        El Concepto:<br /><span class="text-2xl">¿Qué es la PNL (Programación Neurolingüística)?</span>
       </h3>
+      <p>
+        Si nunca has escuchado hablar de la PNL, imagínala como el manual de usuario de tu propio cerebro. Tu mente
+        funciona a través de un software que se ha ido programando desde tu infancia con base en tus experiencias,
+        miedos y entorno. <br /><br />La PNL es un conjunto de herramientas prácticas que nos permite auditar ese
+        "software mental", identificar qué pensamientos te están limitando y reprogramar tu cerebro para que reaccione
+        con calma, seguridad y claridad, en lugar de activar el estrés de manera automática.
+      </p>
     </Fragment>
 
     <Fragment slot="bg">
@@ -226,29 +242,27 @@ const metadata = {
     isAfterContent={true}
     items={[
       {
-        title: 'Description:',
+        title: 'Programación',
         description:
-          'Designed a captivating event poster for an art and music festival, "ArtWave Fusion," aiming to showcase the synergy between visual art and music genres.',
+          'Identificamos tus hábitos y automatismos mentales. Sustituimos los patrones de ansiedad y autosabotaje por programas que impulsen tu bienestar.',
       },
       {
-        title: 'Role:',
-        description: `Translated the festival's creative theme into a visually striking poster. Used bold typography, vibrant colors, and abstract elements to depict the fusion of art and music. Ensured the design captured the festival's vibrant atmosphere.`,
+        title: 'Neuro',
+        description: `Optimizamos tu sistema nervioso. Es la forma en que tu cerebro procesa y almacena la realidad a través de imágenes, sonidos y sensaciones físicas.`,
+      },
+      {
+        title: 'Lingüística',
+        description: `Ajustamos tu lenguaje. Tanto tus palabras como tu diálogo interno programan directamente tus emociones y tu capacidad de reacción ante el mundo.`,
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1619983081563-430f63602796?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
       alt: 'Art and Music Poster Image',
     }}
-    callToAction={{
-      target: '_blank',
-      text: 'Go to the project',
-      icon: 'tabler:chevron-right',
-      href: '#',
-    }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 2: <br /><span class="text-2xl">Event poster for art & music festival</span>
+        Los Componentes:<br /><span class="text-2xl">Los Pilares del Cambio</span>
       </h3>
     </Fragment>
 
@@ -264,29 +278,28 @@ const metadata = {
     isAfterContent={true}
     items={[
       {
-        title: 'Description:',
-        description: `Redesigned the e-commerce website for an eco-conscious fashion brand, GreenVogue. The objective was to align the brand's online presence with its sustainable ethos and improve user experience.`,
+        title: 'Descodificación de Creencias',
+        description: `Auditamos tu discurso para detectar bloqueos. Usamos Hipnosis Ericksoniana Ligera (trance conversacional) para conectar con el origen de tus patrones inconscientes sin activar resistencias.`,
       },
       {
-        title: 'Role:',
-        description: `Conducted a thorough analysis of the brand's values and customer base to inform the design direction. Created a visually appealing interface with intuitive navigation, highlighting sustainable materials, and integrating a user-friendly shopping experience.`,
+        title: 'Edición Mental y Liberación Somática',
+        description: `Alteramos la estructura de los recuerdos dolorosos para neutralizar su carga. Combinamos PNL con EFT Tapping Clínico (estímulo de puntos meridianos) para reducir el cortisol y liberar el estrés de tu biología.`,
+      },
+      {
+        title: 'Anclajes de Alto Rendimiento',
+        description: `Creamos disparadores en tu cuerpo para acceder a estados de calma y enfoque. Mediante Hipnosis Profunda, sembramos estas herramientas en tu inconsciente para que las actives a voluntad ante cualquier desafío.`,
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1664455340023-214c33a9d0bd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
       alt: 'Fashion e-commerce Image',
     }}
-    callToAction={{
-      target: '_blank',
-      text: 'Go to the project',
-      icon: 'tabler:chevron-right',
-      href: '#',
-    }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 3: <br /><span class="text-2xl">E-commerce website redesign for fashion brand</span>
+        La Aplicación: <br /><span class="text-2xl">Tres Ejes de Acción en Sesión</span>
       </h3>
+      <p>Aplicamos la PNL mediante procesos lógicos diseñados para transformar tu realidad interna:</p>
     </Fragment>
 
     <Fragment slot="bg">
@@ -297,8 +310,8 @@ const metadata = {
   <!-- Testimonials Widget *********** -->
 
   <Testimonials
-    title="Client testimonials"
-    subtitle="Discover what clients have to say about their experiences working with me."
+    title="Lo Que Dicen Mis Clientes"
+    subtitle="Testimonios e historias reales de superación y crecimiento personal."
     testimonials={[
       {
         testimonial: `She took our vague concept and turned it into a visual masterpiece that perfectly aligned with our goals. Her attention to detail and ability to translate ideas into compelling visuals exceeded our expectations.`,
@@ -360,12 +373,12 @@ const metadata = {
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
-    title="Let's create together"
-    subtitle="Ready to transform your vision into captivating designs?"
+    title="Comienza tu proceso de cambio hoy"
+    subtitle="Las consultas y sesiones se llevan a cabo de manera 100% virtual a través de plataformas seguras, garantizando total confidencialidad y comodidad desde el lugar donde te encuentres."
     actions={[
       {
         variant: 'primary',
-        text: 'Hire me',
+        text: 'Solicitar Consulta Gratuita',
         href: '/',
       },
     ]}
