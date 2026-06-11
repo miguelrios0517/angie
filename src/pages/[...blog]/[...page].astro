@@ -1,7 +1,7 @@
 ---
 import type { InferGetStaticPropsType, GetStaticPaths } from 'astro';
 
-import Layout from '~/layouts/PageLayout.astro';
+import Layout from '~/layouts/PageLayoutAngie.astro';
 import BlogList from '~/components/blog/List.astro';
 import Headline from '~/components/blog/Headline.astro';
 import Pagination from '~/components/blog/Pagination.astro';
@@ -38,9 +38,9 @@ const metadata = {
 <Layout metadata={metadata}>
   <section class="px-6 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-4xl">
     <Headline
-      subtitle="A statically generated blog example with news, tutorials, resources and other interesting content related to AstroWind"
+      subtitle="Espacio de psicología transpersonal, PNL e hipnosis clínica. Herramientas profundas para transformar tu mente y regular tu sistema nervioso."
     >
-      The Blog
+      Blog
     </Headline>
     <BlogList posts={page.data} />
     <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} />

@@ -1,9 +1,34 @@
 ---
 import { SITE } from 'astrowind:config';
+import { Picture, Image } from 'astro:assets';
+import LogoAngie from '~/assets/images/logo_angie.png';
 ---
 
-<span
+<Picture
+  class="h-[60px] w-[151px] object-contain"
+  src={LogoAngie}
+  width={151}
+  height={60}
+  widths={[151, 453]}
+  sizes="151px"
+  formats={['avif', 'webp']}
+  alt="Costa Sur Taqueria Logo"
+  loading="eager"
+  fetchpriority="high"
+/>
+
+<!-- <Picture
+  class:list={''}
+  src={LogoAngie}
+  height={60}
+  formats={['avif', 'webp']}
+  alt="Ginger Teriyaki Logo"
+  loading={'eager'}
+  fetchpriority={'high'}
+/> -->
+
+<!-- <span
   class="text-primary-navy self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold whitespace-nowrap dark:text-white"
 >
   🌿 {SITE?.name}
-</span>
+</span> -->

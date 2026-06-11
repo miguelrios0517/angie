@@ -129,7 +129,7 @@ export const angieHeader = {
       href: getPermalink('/'),
     },
     {
-      text: 'Sobre Angie',
+      text: 'Sobre Mí',
       href: getPermalink('/sobre-angie'),
     },
     {
@@ -150,6 +150,14 @@ export const angieHeader = {
       ],
     },
     {
+      text: 'Testimonios',
+      href: getPermalink('/testimonios'),
+    },
+    {
+      text: 'Blog',
+      href: getPermalink('/blog'),
+    },
+    {
       text: 'Contacto',
       href: getPermalink('/contacto'),
     },
@@ -166,62 +174,55 @@ export const angieHeader = {
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'Navegación',
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: 'Inicio', href: '/' },
+        { text: 'Sobre mí', href: '/sobre-angie' },
+        { text: 'Testimonios', href: '/testimonios' },
+        { text: 'Contacto', href: '/contacto' },
       ],
     },
     {
-      title: 'Platform',
+      title: 'Servicios',
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
+        { text: 'Sesion Individual (50 minutos)', href: '/sesion-individual.astro' },
+        { text: 'Programas de 12 Semananas', href: '/programa-12-semanas.astros' },
+        { text: 'Talleres y Grupos', href: '/talleres-grupos.astro' },
       ],
     },
     {
-      title: 'Support',
+      title: 'Artículos',
       links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
-      ],
-    },
-    {
-      title: 'Company',
-      links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
+        { text: 'Sesiones vs. Programa', href: '/blog/sesiones-sueltas-vs-programa-transformacion' },
+        { text: '¿Cómo Sanamos? (Técnicas)', href: '/blog/como-sanamos-tecnicas-neuro-alquimia' },
+        { text: 'Acompañamiento Remoto', href: '/blog/beneficios-acompanamiento-remoto' },
+        { text: '¿Qué es la Hipnosis?', href: '/blog/que-es-la-hipnosis-clinica' },
+        { text: '¿Qué es el EFT Tapping?', href: '/blog/que-es-eft-tapping-clinico' },
+        { text: 'Psicología Transpersonal', href: '/blog/que-es-psicologia-transpersonal' },
       ],
     },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    { text: 'Terms', href: getPermalink('') },
+    { text: 'Privacy Policy', href: getPermalink('') },
   ],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/arthelokyo/astrowind' },
+    {
+      ariaLabel: 'WhatsApp',
+      icon: 'tabler:brand-whatsapp',
+      href: 'https://wa.me/51987717886?text=Hola%20Psic.%20Angie%2C%20me%20gustar%C3%ADa%20solicitar%20la%20consulta%20gratuita%20de%2010%20minutos%20para%20conocer%20m%C3%A1s%20sobre%20las%20sesiones.',
+    },
+    {
+      ariaLabel: 'Instagram',
+      icon: 'tabler:brand-instagram',
+      href: 'https://www.instagram.com/psic.angiewong?igsh=cmNtcDV4d3Buc3Fz',
+    },
+    {
+      ariaLabel: 'TikTok',
+      icon: 'tabler:brand-tiktok',
+      href: 'https://www.tiktok.com/@psico.angiewong?_r=1&_t=ZT-977uMlhAWhZ',
+    },
+    { ariaLabel: 'Email', icon: 'tabler:mail', href: 'mailto:angiewong.psicologa@gmail.com' },
   ],
-  footNote: `
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://github.com/arthelokyo"> Arthelokyo</a> · All rights reserved.
-  `,
+  footNote: ` All rights reserved.`,
 };
