@@ -14,7 +14,7 @@ const metadata = {
 
   <HeroText tagline="Contacto" title="Tu bienestar empieza aquí" />
 
-  <ContactUs
+  <!-- <ContactUs
     id="form"
     title="Da el primer paso"
     subtitle="Si buscas apoyo psicológico o quieres alcanzar una meta con sesiones de coaching, estás en el lugar correcto. Escríbeme con total confianza; este es un espacio seguro y confidencial. Te responderé en menos de 24 horas."
@@ -34,12 +34,14 @@ const metadata = {
     textarea={{
       label: 'Mensaje',
     }}
-  />
+  /> -->
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Contacto"
+    title="¿Listo para avanzar?"
+    subtitle="Si buscas apoyo psicológico o quieres alcanzar una meta con sesiones de coaching, estás en el lugar correcto. Contáctame directamente por WhatsApp en un espacio 100% seguro y confidencial. Te responderé en menos de 24 horas."
+    id="contact-info"
     items={[
       {
         title: 'Espacio 100% confidencial',
@@ -55,8 +57,13 @@ const metadata = {
       },
       {
         title: 'WhatsApp',
-        description: '+51 987 717 886',
         icon: 'tabler:headset',
+        callToAction: {
+          text: '+51 987 717 886',
+          variant: 'link',
+          target: '_blank',
+          href: 'https://wa.me/51987717886?text=Hola%20Psic.%20Angie%2C%20me%20gustar%C3%ADa%20solicitar%20la%20consulta%20gratuita%20de%2010%20minutos%20para%20conocer%20m%C3%A1s%20sobre%20las%20sesiones.',
+        },
       },
       {
         title: 'Email',

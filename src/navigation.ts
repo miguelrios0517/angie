@@ -177,7 +177,7 @@ export const footerData = {
       title: 'Navegación',
       links: [
         { text: 'Inicio', href: '/' },
-        { text: 'Sobre mí', href: '/sobre-angie' },
+        { text: 'Sobre mí', href: '/sobre-mi' },
         { text: 'Testimonios', href: '/testimonios' },
         { text: 'Contacto', href: '/contacto' },
       ],
