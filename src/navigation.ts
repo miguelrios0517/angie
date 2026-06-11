@@ -130,7 +130,7 @@ export const angieHeader = {
     },
     {
       text: 'Sobre Mí',
-      href: getPermalink('/sobre-angie'),
+      href: getPermalink('/sobre-mi'),
     },
     {
       text: 'Servicios',
