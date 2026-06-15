@@ -19,6 +19,8 @@ import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin } from './src/uti
 
 import vercel from '@astrojs/vercel';
 
+import cloudflare from '@astrojs/cloudflare';
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const hasExternalScripts = false;
@@ -103,5 +105,5 @@ export default defineConfig({
     },
   },
 
-  adapter: vercel(),
+  adapter: cloudflare(),
 });
