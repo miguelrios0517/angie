@@ -1,22 +1,23 @@
 ---
 import { SITE } from 'astrowind:config';
-import { Picture, Image } from 'astro:assets';
+import { Picture } from 'astro:assets';
+import Image from '~/components/common/Image.astro';
 import LogoAngie from '~/assets/images/logo_angie.png';
 ---
 
-<Picture
+<Image
   class="h-[60px] w-[151px] object-contain"
-  src={LogoAngie}
+  widths={[151, 453]}
+  sizes="151px"
+  loading="eager"
+  fetchpriority="high"
   width={151}
   height={60}
   widths={[151, 453]}
-  sizes="151px"
-  formats={['avif', 'webp']}
-  alt="Costa Sur Taqueria Logo"
-  loading="eager"
-  fetchpriority="high"
+  format="webp"
+  alt="Angie Wong Logo"
+  src="https://assets.angiewongpsi.com/logo_angie.png"
 />
-
 <!-- <Picture
   class:list={''}
   src={LogoAngie}
