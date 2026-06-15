@@ -1,7 +1,7 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-import { defineConfig } from 'astro/config';
+import { defineConfig, passthroughImageService } from 'astro/config';
 
 import { unified } from '@astrojs/markdown-remark';
 
@@ -87,6 +87,7 @@ export default defineConfig({
     // native <Image /> (i.e. providers Unpic can't detect, like Pixabay).
     // Listed entries are authorized to be processed by Sharp.
     domains: ['cdn.pixabay.com'],
+    service: passthroughImageService(),
   },
 
   markdown: {
