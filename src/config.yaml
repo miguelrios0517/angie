@@ -1,6 +1,6 @@
 site:
   name: Angie Wong
-  site: 'https://astrowind.vercel.app'
+  site: 'https://angiewongpsi.com'
   base: '/'
   trailingSlash: false
 
@@ -9,23 +9,23 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: 'Angie Wong — Encuentra Calma Mental y Claridad para Avanzar'
+    # template: '%s — AstroWind'
+  description: 'Espacio de psicología, coaching y PNL con más de 18 años de experiencia. Herramientas prácticas para reducir el estrés, calmar la mente y fortalecer tu bienestar emocional.'
   robots:
     index: true
     follow: true
-  openGraph:
-    site_name: AstroWind
-    images:
-      - url: '~/assets/images/default.png'
-        width: 1200
-        height: 628
-    type: website
-  twitter:
-    handle: '@arthelokyo'
-    site: '@arthelokyo'
-    cardType: summary_large_image
+  # openGraph:
+  #   site_name: AstroWind
+  #   images:
+  #     - url: '~/assets/images/default.png'
+  #       width: 1200
+  #       height: 628
+  #   type: website
+  # twitter:
+  #   handle: '@arthelokyo'
+  #   site: '@arthelokyo'
+  #   cardType: summary_large_image
 
 i18n:
   language: en
