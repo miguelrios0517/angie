@@ -164,7 +164,7 @@ export const angieHeader = {
   ],
   actions: [
     {
-      text: 'Reservar Sesión',
+      text: 'Agenda tu Sesión',
       target: '_blank',
       href: 'https://wa.me/51987717886?text=Hola%20Psic.%20Angie%2C%20me%20gustar%C3%ADa%20solicitar%20la%20consulta%20gratuita%20de%2010%20minutos%20para%20conocer%20m%C3%A1s%20sobre%20las%20sesiones.',
     },
@@ -185,20 +185,20 @@ export const footerData = {
     {
       title: 'Servicios',
       links: [
-        { text: 'Sesion Individual (50 minutos)', href: '/sesion-individual.astro' },
-        { text: 'Programas de 12 Semananas', href: '/programa-12-semanas.astros' },
-        { text: 'Talleres y Grupos', href: '/talleres-grupos.astro' },
+        { text: 'Sesion Individual (50 minutos)', href: '/sesion-individual' },
+        { text: 'Programas de 12 Semananas', href: '/programa-12-semanas' },
+        { text: 'Talleres y Grupos', href: '/talleres-grupos' },
       ],
     },
     {
       title: 'Artículos',
       links: [
-        { text: 'Sesiones vs. Programa', href: '/blog/sesiones-sueltas-vs-programa-transformacion' },
-        { text: '¿Cómo Sanamos? (Técnicas)', href: '/blog/como-sanamos-tecnicas-neuro-alquimia' },
-        { text: 'Acompañamiento Remoto', href: '/blog/beneficios-acompanamiento-remoto' },
-        { text: '¿Qué es la Hipnosis?', href: '/blog/que-es-la-hipnosis-clinica' },
-        { text: '¿Qué es el EFT Tapping?', href: '/blog/que-es-eft-tapping-clinico' },
-        { text: 'Psicología Transpersonal', href: '/blog/que-es-psicologia-transpersonal' },
+        { text: 'Sesiones vs. Programa', href: '/sesiones-sueltas-vs-programa-transformacion' },
+        { text: '¿Cómo Sanamos? (Técnicas)', href: '/como-sanamos-tecnicas-neuro-alquimia' },
+        { text: 'Acompañamiento Remoto', href: '/beneficios-acompanamiento-remoto' },
+        { text: '¿Qué es la Hipnosis?', href: '/que-es-la-hipnosis-clinica' },
+        { text: '¿Qué es el EFT Tapping?', href: '/que-es-eft-tapping-clinico' },
+        { text: 'Psicología Transpersonal', href: '/que-es-psicologia-transpersonal' },
       ],
     },
   ],

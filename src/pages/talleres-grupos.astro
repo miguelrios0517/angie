@@ -8,7 +8,7 @@ import Layout from '~/layouts/PageLayoutAngie.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 
 const metadata = {
-  title: 'Services',
+  title: 'Servicios',
 };
 ---
 
@@ -18,11 +18,11 @@ const metadata = {
   <Hero
     tagline="Servicios"
     title="Talleres y Sesiones Grupales"
-    subtitle="Transformación colectiva: Talleres y clases en grupo que inspiran el cambio real."
+    subtitle="Procesos grupales de transformación: espacios guiados que generan cambios reales a través de la conexión y el aprendizaje compartido."
     actions={[{ variant: 'primary', text: 'Explorar servicio', href: '/talleres-grupos#intro' }]}
     image={{
       src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'AstroWind Hero Image',
+      alt: 'Angie Wong Logo',
     }}
   />
 
@@ -33,22 +33,21 @@ const metadata = {
     isReversed
     image={{
       src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
-      alt: 'Features Image',
+      alt: 'AstroWind Hero Image',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Talleres y Sesiones Grupales<span class="font-normal"></span>
-      </h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Talleres y Sesiones Grupales</h3>
       <p>
-        Espacios de crecimiento compartido, reflexión profunda y herramientas prácticas para transformar el bienestar
-        emocional, personal y profesional en comunidad.<br /><br />El crecimiento personal no tiene por qué ser un
-        camino solitario. Las sesiones grupales y los talleres ofrecen una dinámica única donde el aprendizaje se
-        potencia a través de las experiencias compartidas, la resonancia con otros y el soporte de un entorno seguro y
-        confidencial guiado por un profesional.
+        Espacios de crecimiento compartido, reflexión profunda y herramientas prácticas para potenciar el bienestar
+        emocional, personal y profesional dentro de una comunidad.<br /><br />El desarrollo personal no tiene por qué
+        vivirse en solitario. Los talleres y sesiones grupales crean un entorno donde el aprendizaje se multiplica
+        gracias a la experiencia compartida, la resonancia con otros y el sostén de un espacio seguro, confidencial y
+        facilitado por un profesional.
       </p>
     </Fragment>
   </Content>
+
   <!-- Content Widget **************** -->
 
   <Content
@@ -57,25 +56,23 @@ const metadata = {
       {
         title: 'Validación',
         description:
-          'Descubrir que otros comparten inquietudes y desafíos similares alivia el aislamiento y fortalece la autocompasión',
+          'Descubrir que otras personas viven inquietudes similares reduce el aislamiento y fortalece la autocompasión.',
         icon: 'tabler:clock',
       },
       {
         title: 'Perspectiva',
-        description:
-          'Escuchar diferentes puntos de vista y soluciones enriquece el propio repertorio de afrontamiento y resolución de problemas.',
+        description: 'Escuchar diferentes puntos de vista amplía las formas de comprender y afrontar las situaciones.',
         icon: 'tabler:school',
       },
       {
         title: 'Acción',
-        description:
-          'El compromiso con un grupo impulsa la responsabilidad personal y la aplicación real de las herramientas aprendidas.',
+        description: 'El compromiso con el grupo impulsa la constancia y la aplicación real de lo aprendido.',
         icon: 'tabler:coin',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Benefits Image',
+      alt: 'Features Image',
     }}
   >
     <Fragment slot="content">
@@ -83,10 +80,9 @@ const metadata = {
         ¿Por qué elegir el formato grupal?
       </h3>
       <p>
-        A diferencia del proceso individual, el trabajo en grupo actúa como un espejo amplificado. Permite a los
-        participantes identificar patrones comunes, normalizar sus procesos emocionales y adquirir herramientas
-        prácticas mediante dinámicas interactivas y vivenciales. Es un entorno idóneo para consolidar habilidades de
-        comunicación, resiliencia y autoconocimiento.
+        A diferencia del trabajo individual, el grupo actúa como un espejo amplificado. Permite identificar patrones
+        comunes, normalizar experiencias emocionales y aprender herramientas prácticas a través de dinámicas vivenciales
+        e interactivas. Es un entorno ideal para fortalecer la comunicación, la resiliencia y el autoconocimiento.
       </p>
     </Fragment>
   </Content>
@@ -99,30 +95,30 @@ const metadata = {
       {
         title: 'Regulación Emocional y Mindfulness',
         description:
-          'Herramientas prácticas para identificar, comprender y canalizar el estrés y la ansiedad cotidiana desde la atención plena.',
+          'Herramientas prácticas para reconocer, comprender y gestionar el estrés y la ansiedad desde la atención plena.',
         icon: 'tabler:wand',
       },
       {
         title: 'Crecimiento Personal y Transiciones',
         description:
-          'Espacios de claridad enfocados en momentos de cambio, desmontaje de creencias limitantes y diseño de metas alineadas con tu propósito.',
+          'Espacios de claridad para momentos de cambio, revisión de creencias limitantes y diseño de metas alineadas con tu propósito.',
         icon: 'tabler:settings',
       },
       {
         title: 'Vínculos, Asertividad y Límites',
         description:
-          'Encuentros dedicados a mejorar la comunicación, construir relaciones más saludables y aprender a establecer límites firmes sin culpa.',
+          'Sesiones enfocadas en mejorar la comunicación, construir relaciones más sanas y aprender a establecer límites claros sin culpa.',
         icon: 'tabler:presentation',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
-      alt: 'Features Image',
+      alt: 'Benefits Image',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Nuestras Líneas de Trabajo</h3>
-      <p>Exploramos el crecimiento personal y el bienestar emocional a través de tres ejes temáticos esenciales:</p>
+      <p>Abordamos el bienestar emocional y el crecimiento personal a través de tres ejes fundamentales:</p>
     </Fragment>
   </Content>
 
@@ -132,25 +128,23 @@ const metadata = {
     items={[
       {
         title: 'Encuadre Conceptual',
-        description:
-          'Una breve introducción teórica, clara y sin tecnicismos, para entender el "por qué" de lo que trabajamos.',
+        description: 'Introducción breve y clara para comprender el sentido del trabajo que realizamos.',
         icon: 'tabler:wand',
       },
       {
         title: 'Dinámicas Experienciales',
-        description: 'Ejercicios prácticos e interactivos para integrar el contenido de manera activa.',
+        description: 'Ejercicios prácticos e interactivos para integrar el contenido de forma vivencial.',
         icon: 'tabler:settings',
       },
       {
-        title: 'Espacio de Cocuración',
+        title: 'Espacio de Co-reflexión',
         description:
-          'Puesta en común (siempre voluntaria) para resolver dudas, compartir hallazgos y procesar la experiencia bajo supervisión profesional.',
+          'Puesta en común voluntaria para compartir, resolver dudas y procesar la experiencia con acompañamiento profesional.',
         icon: 'tabler:presentation',
       },
       {
         title: 'Herramientas de Integración',
-        description:
-          'Recursos complementarios o guías de trabajo para que puedas seguir practicando e interiorizando lo aprendido durante la semana.',
+        description: 'Recursos y guías prácticas para seguir aplicando lo aprendido durante la semana.',
         icon: 'tabler:presentation',
       },
     ]}
@@ -162,9 +156,9 @@ const metadata = {
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Metodología de Trabajo</h3>
       <p>
-        Cada taller o ciclo grupal se fundamenta en un marco teórico científico y riguroso (combinando la Psicología
-        Cognitivo-Conductual, el enfoque Humanista y el Coaching), estructurado de forma digerible y vivencial. Nuestros
-        encuentros suelen estructurarse en cuatro pilares:
+        Cada taller o ciclo grupal se basa en un marco teórico sólido (Psicología Cognitivo-Conductual, enfoque
+        Humanista y Coaching), presentado de forma clara, práctica y accesible. Los encuentros se estructuran en cuatro
+        momentos:
       </p>
     </Fragment>
   </Content>
@@ -172,69 +166,74 @@ const metadata = {
   <!-- Testimonials Widget *********** -->
 
   <Testimonials
-    title="Lo que dicen quienes han participado"
+    title="Lo que dicen quienes ya han dado el paso"
     testimonials={[
       {
-        testimonial: `The designs are not only visually appealing but also highly professional. The templates have saved me a significant amount of time while helping me make a lasting impression on my clients.`,
-        name: 'Emily Kennedy',
-        job: 'Front-end developer',
+        testimonial: `El proceso con Angie ha sido transformador. Sus herramientas prácticas de PNL realmente me ayudaron a superar la tensión constante que afectaba mi día a día. Ahora me siento empoderada y capaz de manejar los desafíos de una manera muy saludable.`,
+        name: 'Valeria Mendoza',
+        job: 'Mentees Satisfecha',
         image: {
-          src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
-          alt: 'Emily Kennedy Image',
+          src: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Cary Kennedy Image',
         },
       },
       {
-        testimonial: `It beautifully showcases my work, with its clean and elegant design that lets my photographs shine. Customization was a breeze, even for a non-tech person like me. The result is a professional and immersive portfolio that's garnered numerous compliments.`,
-        name: 'Sarah Hansen',
-        job: 'Photographer',
+        testimonial: `Como coach, Angie me guio a través de un process de autorreflexión que cambió mi perspectiva y me dio el impulso necesario para avanzar en mi carrera. Su apoyo fue fundamental para alcanzar mis metas profesionales.`,
+        name: 'Carlos Espinoza',
+        job: 'Cliente Profesional',
         image: {
-          src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Sarah Hansen Image',
+          src: 'https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Josh Wilkinson Image',
         },
       },
       {
-        testimonial: `I discovered these templates and I'm impressed by their variety and quality. They've helped me establish a consistent brand image across my marketing and social platforms, elevating my business's overall appearance.`,
-        name: 'Mark Wilkinson',
-        job: 'Small business owner',
+        testimonial:
+          'Gracias a las sesiones de claridad y enfoque con Angie, finalmente pude tomar decisiones informadas sobre mi futuro académico y profesional. Sus herramientas me brindaron total seguridad en mí mismo.',
+        name: 'Mateo Silva',
+        job: 'Estudiante Universitario',
         image: {
-          src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
-          alt: 'Mark Wilkinson Image',
+          src: 'https://images.unsplash.com/photo-1512361436605-a484bdb34b5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Sidney Hansen Image',
         },
       },
     ]}
     callToAction={{
-      target: '_blank',
-      text: 'More testimonials...',
-      href: 'https://github.com/arthelokyo/astrowind',
+      text: 'Leer más testimonios',
+      href: 'testimonios',
       icon: 'tabler:chevron-right',
     }}
-  />
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-canvas-white dark:bg-transparent"></div>
+    </Fragment>
+  </Testimonials>
+  <!-- FAQs Widget ******************* -->
 
   <FAQs
     title="Preguntas Frecuentes"
-    subtitle="Respuestas rápidas a las dudas más comunes sobre nuestros espacios grupales."
+    subtitle="Respuestas claras y directas a las dudas más comunes sobre los espacios grupales."
     tagline="FAQs"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: '¿Cómo sé si es mejor para mí un proceso individual o uno grupal?',
+        title: '¿Cómo sé si es mejor un proceso individual o grupal?',
         description:
-          'El grupo es ideal para adquirir herramientas y compartir vivencias. Si buscas tratar un tema muy específico o de alta complejidad diagnóstica, la terapia individual es el espacio idóneo. Ambos formatos son complementarios.',
+          'El formato grupal es ideal para adquirir herramientas y compartir experiencias. Si buscas trabajar un tema muy específico o clínicamente complejo, el proceso individual puede ser más adecuado. Ambos formatos pueden complementarse.',
       },
       {
-        title: 'Me da un poco de timidez hablar en público, ¿es obligatorio participar?',
+        title: 'Me da timidez hablar en grupo, ¿es obligatorio participar?',
         description:
-          'No, el respeto a tu ritmo es fundamental. Compartir experiencias es siempre voluntario. Puedes beneficiarte de las dinámicas y escuchar a los demás sin necesidad de exponer detalles que prefieras reservar',
+          'No. El respeto por tu ritmo es esencial. Compartir es siempre voluntario. Puedes beneficiarte escuchando y participando solo cuando te sientas listo/a.',
       },
       {
         title: '¿Cuál es el perfil de la persona que facilita estos espacios?',
         description:
-          'Son guiados por Angie Wong, quien combina la rigurosidad y base científica de la psicología clínica con el dinamismo y la orientación a metas del coaching estratégico para ofrecer una experiencia práctica.',
+          'Los espacios son guiados por Angie Wong, quien integra la base científica de la psicología con un enfoque práctico orientado al crecimiento personal y al coaching estratégico.',
       },
       {
         title: '¿Cuántas personas forman cada grupo?',
         description:
-          'Para garantizar que el espacio sea seguro, confidencial y que todos reciban una atención de calidad, trabajamos con cupos limitados, manteniendo un máximo de 10 a 12 participantes por ciclo.',
+          'Para asegurar un espacio seguro y de calidad, los grupos son reducidos, con un máximo de 10 a 12 participantes por ciclo.',
       },
     ]}
   >
@@ -255,7 +254,7 @@ const metadata = {
         icon: 'tabler:brand-whatsapp',
       },
     ]}
-    title="¿Te interesa participar en nuestro próximo espacio grupal?"
-    subtitle="Si quieres conocer las temáticas activas, las próximas fechas confirmadas o te interesa llevar uno de estos talleres a tu organización, ponte en contacto para recibir la información actualizada."
+    title="¿Te interesa participar en el próximo espacio grupal?"
+    subtitle="Si quieres conocer las temáticas disponibles, próximas fechas o llevar estos talleres a tu organización, contáctanos para recibir información actualizada."
   />
 </Layout>

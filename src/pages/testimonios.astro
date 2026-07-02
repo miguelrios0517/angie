@@ -1,0 +1,63 @@
+---
+import Layout from '~/layouts/PageLayoutAngie.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Prices from '~/components/widgets/Pricing.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+
+const metadata = {
+  title: 'Pricing',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+
+  <HeroText
+    tagline="Testimonios"
+    title="Voces Reales de Cambio y Crecimiento"
+    subtitle="Aquí encontrarás experiencias de personas que han trabajado conmigo en terapia o coaching. Procesos de cambio emocional, claridad mental y crecimiento personal contados desde su propia voz."
+  />
+
+  <!-- Testimonials Widget *********** -->
+
+  <Testimonials
+    testimonials={[
+      {
+        testimonial: `El proceso con Angie ha sido transformador. Sus herramientas prácticas de PNL realmente me ayudaron a superar la tensión constante que afectaba mi día a día. Ahora me siento empoderada y capaz de manejar los desafíos de una manera muy saludable.`,
+        name: 'Valeria Mendoza',
+        job: 'Mentees Satisfecha',
+        image: {
+          src: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Cary Kennedy Image',
+        },
+      },
+      {
+        testimonial: `Como coach, Angie me guio a través de un process de autorreflexión que cambió mi perspectiva y me dio el impulso necesario para avanzar en mi carrera. Su apoyo fue fundamental para alcanzar mis metas profesionales.`,
+        name: 'Carlos Espinoza',
+        job: 'Cliente Profesional',
+        image: {
+          src: 'https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Josh Wilkinson Image',
+        },
+      },
+      {
+        testimonial:
+          'Gracias a las sesiones de claridad y enfoque con Angie, finalmente pude tomar decisiones informadas sobre mi futuro académico y profesional. Sus herramientas me brindaron total seguridad en mí mismo.',
+        name: 'Mateo Silva',
+        job: 'Estudiante Universitario',
+        image: {
+          src: 'https://images.unsplash.com/photo-1512361436605-a484bdb34b5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Sidney Hansen Image',
+        },
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-canvas-white dark:bg-transparent"></div>
+    </Fragment>
+  </Testimonials>
+</Layout>

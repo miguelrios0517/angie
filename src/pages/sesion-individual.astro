@@ -18,7 +18,7 @@ const metadata = {
   <Hero
     tagline="Servicios"
     title="Sesiones Individuales y en Pareja (50 Minutos)"
-    subtitle="Tu espacio seguro de escucha, transformación y crecimiento, estés donde estés."
+    subtitle="Tu espacio seguro de escucha, cambio y crecimiento, estés donde estés."
     actions={[{ variant: 'primary', text: 'Explorar servicio', href: '/sesion-individual#intro' }]}
     image={{
       src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
@@ -41,10 +41,10 @@ const metadata = {
         Sesiones Online Individuales y en Pareja <span class="font-normal">(50 Minutos Virtual)</span>
       </h3>
       <p>
-        A veces, el día a día nos absorbe y nos olvidamos de dedicar tiempo a lo más importante: nosotros mismos y
-        nuestras relaciones.<br /><br />Mis sesiones online de 50 minutos están diseñadas para ofrecerte un espacio de
-        absoluta confidencialidad, empatía y herramientas prácticas. No importa si buscas claridad a nivel personal o si
-        deseas fortalecer el vínculo con tu pareja; aquí encontrarás el apoyo profesional que necesitas.
+        El ritmo del día a día a menudo nos absorbe y dejamos de lado lo más importante: nosotros y nuestras relaciones.<br
+        /><br />
+        Mis sesiones online de 50 minutos te ofrecen un espacio confidencial, empático y orientado a la acción. Tanto si buscas
+        claridad personal como si quieres mejorar tu relación de pareja, aquí encontrarás acompañamiento profesional y cercano.
       </p>
     </Fragment>
   </Content>
@@ -55,23 +55,23 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'El estrés o agotamiento afecta tu día a día',
-        description: 'Vives en alerta constante, el ruido mental no te deja descansar y la rutina te sobrepasa.',
+        title: 'El estrés o agotamiento afecta tu rutina',
+        description: 'Sientes sobrecarga constante, mente acelerada y dificultad para descansar.',
         icon: 'tabler:clock',
       },
       {
-        title: 'Sientes estancamiento y te cuesta decidir',
-        description: 'Caminas en círculos, perdiste la motivación y el miedo a equivocarte te paraliza.',
+        title: 'Te sientes estancado/a y te cuesta decidir',
+        description: 'Repites patrones, pierdes motivación y el miedo a equivocarte te frena.',
         icon: 'tabler:school',
       },
       {
-        title: 'Tienes baja autoestima o te cuesta poner límites',
-        description: 'Dudas de tu valor, te cuesta decir "no" por culpa y te postergas por complacer a los demás.',
+        title: 'Baja autoestima o dificultad para poner límites',
+        description: 'Dudas de ti, evitas el conflicto y priorizas a los demás sobre ti mismo/a.',
         icon: 'tabler:coin',
       },
       {
-        title: 'Vives un cambio o duelo difícil de asimilar',
-        description: 'Te cuesta aceptar tu realidad tras una ruptura, mudanza o pérdida, cargando con todo a solas.',
+        title: 'Estás en un cambio o duelo difícil',
+        description: 'Procesas una ruptura, pérdida o transición que te cuesta asimilar.',
         icon: 'tabler:file-download',
       },
     ]}
@@ -82,7 +82,7 @@ const metadata = {
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">¿En qué puedo ayudarte?</h3>
-      <p>Este espacio está diseñado para ti si te identificas con alguna de estas situaciones:</p>
+      <p>Este espacio es para ti si atraviesas alguna de estas situaciones:</p>
     </Fragment>
   </Content>
 
@@ -92,21 +92,18 @@ const metadata = {
     isReversed
     items={[
       {
-        title: 'Desahogo y validación',
-        description:
-          'Un espacio seguro donde puedes expresarte sin filtros ni miedo a ser juzgado/a. Sentirte escuchado/a es el primer paso para sanar.',
+        title: 'Descarga y contención emocional',
+        description: 'Un espacio sin juicio donde puedes expresarte libremente y sentirte acompañado/a.',
         icon: 'tabler:wand',
       },
       {
-        title: 'Comprensión del problema',
-        description:
-          'Identificamos el origen de tus bloqueos o el porqué de tus reacciones actuales. Le ponemos nombre a lo que te pasa.',
+        title: 'Claridad sobre lo que te ocurre',
+        description: 'Ordenamos lo que sientes, identificamos patrones y entendemos el origen del malestar.',
         icon: 'tabler:settings',
       },
       {
-        title: 'Herramientas prácticas',
-        description:
-          'No te vas con las manos vacías. Nos enfocamos en soluciones y estrategias psicológicas que puedes empezar a aplicar esa misma semana en tu vida cotidiana.',
+        title: 'Estrategias aplicables',
+        description: 'Te llevas herramientas prácticas que puedes empezar a usar desde esa misma semana.',
         icon: 'tabler:presentation',
       },
     ]}
@@ -116,11 +113,10 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">¿Qué lograremos en 50 minutos?</h3>
-      <p>
-        Aunque cada proceso es único y se adapta a tu ritmo, en nuestras sesiones individuales nos enfocamos en tres
-        pilares:
-      </p>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        ¿Qué trabajaremos en 50 minutos?
+      </h3>
+      <p>Cada proceso es distinto, pero en sesión nos enfocamos en tres pilares clave:</p>
     </Fragment>
   </Content>
 
@@ -130,66 +126,72 @@ const metadata = {
     title="Lo que dicen quienes ya han dado el paso"
     testimonials={[
       {
-        testimonial: `The designs are not only visually appealing but also highly professional. The templates have saved me a significant amount of time while helping me make a lasting impression on my clients.`,
-        name: 'Emily Kennedy',
-        job: 'Front-end developer',
+        testimonial: `El proceso con Angie ha sido transformador. Sus herramientas prácticas de PNL realmente me ayudaron a superar la tensión constante que afectaba mi día a día. Ahora me siento empoderada y capaz de manejar los desafíos de una manera muy saludable.`,
+        name: 'Valeria Mendoza',
+        job: 'Mentees Satisfecha',
         image: {
-          src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
-          alt: 'Emily Kennedy Image',
+          src: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Cary Kennedy Image',
         },
       },
       {
-        testimonial: `It beautifully showcases my work, with its clean and elegant design that lets my photographs shine. Customization was a breeze, even for a non-tech person like me. The result is a professional and immersive portfolio that's garnered numerous compliments.`,
-        name: 'Sarah Hansen',
-        job: 'Photographer',
+        testimonial: `Como coach, Angie me guio a través de un process de autorreflexión que cambió mi perspectiva y me dio el impulso necesario para avanzar en mi carrera. Su apoyo fue fundamental para alcanzar mis metas profesionales.`,
+        name: 'Carlos Espinoza',
+        job: 'Cliente Profesional',
         image: {
-          src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Sarah Hansen Image',
+          src: 'https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Josh Wilkinson Image',
         },
       },
       {
-        testimonial: `I discovered these templates and I'm impressed by their variety and quality. They've helped me establish a consistent brand image across my marketing and social platforms, elevating my business's overall appearance.`,
-        name: 'Mark Wilkinson',
-        job: 'Small business owner',
+        testimonial:
+          'Gracias a las sesiones de claridad y enfoque con Angie, finalmente pude tomar decisiones informadas sobre mi futuro académico y profesional. Sus herramientas me brindaron total seguridad en mí mismo.',
+        name: 'Mateo Silva',
+        job: 'Estudiante Universitario',
         image: {
-          src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
-          alt: 'Mark Wilkinson Image',
+          src: 'https://images.unsplash.com/photo-1512361436605-a484bdb34b5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Sidney Hansen Image',
         },
       },
     ]}
     callToAction={{
-      target: '_blank',
-      text: 'More testimonials...',
-      href: 'https://github.com/arthelokyo/astrowind',
+      text: 'Leer más testimonios',
+      href: 'testimonios',
       icon: 'tabler:chevron-right',
     }}
-  />
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-canvas-white dark:bg-transparent"></div>
+    </Fragment>
+  </Testimonials>
+
+  <!-- FAQs Widget ******************* -->
 
   <FAQs
     title="Preguntas Frecuentes"
-    subtitle="Antes de dar el paso, es normal querer entender cómo funciona las sesiones virtuales. Aquí encontrarás las respuestas a las preguntas más comunes."
+    subtitle="Antes de empezar, es normal querer entender cómo funcionan las sesiones online. Aquí tienes las respuestas más comunes."
     tagline="FAQs"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
         title: '¿Es igual de efectiva una sesión online que una presencial?',
         description:
-          'Sí, totalmente. Las sesiones virtuales de 50 minutos ofrecen la misma rigurosidad clínica, confidencialidad y empatía que un espacio presencial, con la ventaja de que puedes tomarlas desde la comodidad, privacidad y seguridad de tu propio hogar, sin perder tiempo en traslados.',
+          'Sí. Las sesiones virtuales mantienen la misma calidad, confidencialidad y acompañamiento que las presenciales, con la ventaja de hacerlas desde casa.',
       },
       {
-        title: '¿Cómo sé si debo agendar una sesión individual o una en pareja?',
+        title: '¿Cómo sé si debo elegir sesión individual o de pareja?',
         description:
-          'Si el malestar que sientes está ligado a dinámicas, problemas de comunicación o crisis directamente con tu compañero/a, la sesión de pareja es el espacio ideal. Si sientes que el estrés, los bloqueos o la falta de límites son un proceso personal que necesitas resolver tú primero, elige la individual.',
+          'Si el problema está en la relación, comunicación o conflictos, la sesión de pareja es ideal. Si es un proceso personal de estrés, ansiedad o límites, la individual es la mejor opción.',
       },
       {
-        title: '¿Qué pasa si no sé por dónde empezar a hablar en la primera sesión?',
+        title: '¿Qué pasa si no sé cómo empezar a hablar?',
         description:
-          'No te preocupes, es completamente normal. Mi rol como psicóloga es guiarte. Crearemos un espacio seguro y sin juicios donde, a través de preguntas sencillas, te ayudaré a ordenar el ruido mental, ponerle nombre a lo que te pasa e identificar la raíz del problema.',
+          'Es normal. Te acompaño guiando el proceso con preguntas simples para ayudarte a ordenar lo que sientes.',
       },
       {
-        title: '¿Cuántas sesiones voy a necesitar para ver resultados?',
+        title: '¿Cuántas sesiones necesito para ver resultados?',
         description:
-          'Cada proceso es único y se adapta a tu ritmo, pero el enfoque de 50 minutos es sumamente práctico. Desde la primera sesión te irás con claridad, desahogo y herramientas psicológicas concretas para que empieces a aplicar en tu vida cotidiana esa misma semana.',
+          'Desde la primera sesión puedes obtener claridad y herramientas prácticas, aunque el proceso depende de cada persona.',
       },
     ]}
   >
@@ -211,6 +213,6 @@ const metadata = {
       },
     ]}
     title="Da el primer paso hoy mismo"
-    subtitle="No tienes que esperar a que la situación te supere para empezar a cuidarte. Agenda tu consulta gratuita de 10 minutos y descubramos juntos el camino hacia tu bienestar."
+    subtitle="No necesitas esperar a estar al límite para empezar a cuidarte. Agenda una consulta gratuita de 10 minutos y veamos cómo puedo acompañarte."
   />
 </Layout>
