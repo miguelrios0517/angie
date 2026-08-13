@@ -176,292 +176,290 @@ const metadata = {
 
       <p class="text-charcoal">
         <strong>Podemos dar el primer paso juntos.</strong>
-
-        <br />
       </p>
 
       <Fragment slot="bg">
         <div class="absolute inset-0 bg-canvas-white dark:bg-transparent"></div>
       </Fragment>
     </Fragment>
-
-    <!-- Content Widget **************** -->
-
-    <Content
-      isReversed
-      tagline="Cómo te puedo ayudar"
-      id="servicios"
-      title="Cómo Podemos Trabajar Juntos"
-      classes={{ container: 'services' }}
-      items={[
-        {
-          title: '100% Online y Flexible',
-          description:
-            'Conéctate desde casa, tu oficina o cualquier espacio privado, en un horario que se adapte a tu rutina.',
-        },
-        {
-          title: 'Sesiones individuales o de pareja',
-          description: 'Elige la modalidad que mejor se adapte a lo que quieres trabajar.',
-        },
-        {
-          title: 'Un espacio seguro y confidencial',
-          description: 'Habla con libertad en un entorno profesional, respetuoso y sin juicios.',
-        },
-      ]}
-      image={{
-        src: 'https://assets.angiewongpsi.com/individual_cropped.jpg',
-        alt: 'Sesión individual con Angie Wong',
-      }}
-      callToAction={{
-        text: 'Más información',
-        icon: 'tabler:chevron-right',
-        href: 'sesion-individual',
-      }}
-    >
-      <Fragment slot="content">
-        <h3 class="text-primary-navy text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-          Sesión Individual o de Pareja (50 min virtual)
-        </h3>
-        Un espacio de psicoterapia para trabajar aquello que estás viviendo desde un lugar seguro, profesional y confidencial.
-      </Fragment>
-
-      <Fragment slot="bg">
-        <div class="absolute inset-0 bg-mist-grey dark:bg-transparent"></div>
-      </Fragment>
-    </Content>
-    <!-- Content Widget **************** -->
-
-    <Content
-      isAfterContent
-      items={[
-        {
-          title: 'Un proceso guiado',
-          description: 'Avanza paso a paso con acompañamiento y seguimiento durante las 12 semanas.',
-        },
-        {
-          title: 'Objetivos y sesiones definidos',
-          description: 'Trabaja con una estructura definida y objetivos concretos para tu proceso.',
-        },
-        {
-          title: 'Herramientas para seguir avanzando',
-          description: 'Desarrolla recursos prácticos que puedas aplicar en tu día a día.',
-        },
-      ]}
-      image={{
-        src: 'https://assets.angiewongpsi.com/hiking_cropped.jpg',
-        alt: 'Blueprint Image',
-      }}
-      callToAction={{
-        text: 'Más información',
-        icon: 'tabler:chevron-right',
-        href: 'programa-12-semanas',
-      }}
-    >
-      <Fragment slot="content">
-        <h3 class="text-primary-navy text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-          Programa de Transformación (12 Semanas)
-        </h3>
-        Un proceso estructurado para quienes buscan un acompañamiento más profundo y continuo.
-      </Fragment>
-
-      <Fragment slot="bg">
-        <div class="absolute inset-0 bg-mist-grey dark:bg-transparent"></div>
-      </Fragment>
-    </Content>
-
-    <!-- Content Widget **************** -->
-
-    <Content
-      isReversed
-      classes={{
-        wrapper: 'section-background-gray',
-      }}
-      isAfterContent
-      items={[
-        {
-          title: 'Aprendizaje en comunidad',
-          description: 'Comparte experiencias y aprende junto a otras personas en un espacio cuidado.',
-        },
-        {
-          title: 'Talleres para empresas y organizaciones',
-          description: 'Promueve el bienestar emocional y el desarrollo de habilidades dentro de tu equipo.',
-        },
-        {
-          title: 'Contenidos adaptados a cada grupo',
-          description: 'Temas y dinámicas diseñados según las necesidades de cada grupo u organización.',
-        },
-      ]}
-      image={{
-        src: 'https://assets.angiewongpsi.com/group.jpg',
-        alt: 'Astronauts Image',
-      }}
-      callToAction={{
-        text: 'Más información',
-        icon: 'tabler:chevron-right',
-        href: 'talleres-grupos',
-      }}
-    >
-      <Fragment slot="content">
-        <h3 class="text-primary-navy text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-          Talleres y Sesiones Grupales
-        </h3>
-        Espacios grupales para aprender, crecer y desarrollar nuevas herramientas para tu bienestar.
-      </Fragment>
-
-      <Fragment slot="bg">
-        <div class="absolute inset-0 bg-mist-grey dark:bg-transparent"></div>
-      </Fragment>
-    </Content>
-
-    <!-- Testimonials Widget *********** -->
-
-    <Testimonials
-      title="Lo Que Dicen Quienes Han Trabajado Conmigo"
-      testimonials={[
-        {
-          testimonial: `El proceso con Angie ha sido transformador. Sus herramientas prácticas de PNL realmente me ayudaron a superar la tensión constante que afectaba mi día a día. Ahora me siento empoderada y capaz de manejar los desafíos de una manera muy saludable.`,
-          name: 'Valeria Mendoza',
-          job: 'Mentees Satisfecha',
-          image: {
-            src: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-            alt: 'Cary Kennedy Image',
-          },
-        },
-        {
-          testimonial: `Como coach, Angie me guio a través de un process de autorreflexión que cambió mi perspectiva y me dio el impulso necesario para avanzar en mi carrera. Su apoyo fue fundamental para alcanzar mis metas profesionales.`,
-          name: 'Carlos Espinoza',
-          job: 'Cliente Profesional',
-          image: {
-            src: 'https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-            alt: 'Josh Wilkinson Image',
-          },
-        },
-        {
-          testimonial:
-            'Gracias a las sesiones de claridad y enfoque con Angie, finalmente pude tomar decisiones informadas sobre mi futuro académico y profesional. Sus herramientas me brindaron total seguridad en mí mismo.',
-          name: 'Mateo Silva',
-          job: 'Estudiante Universitario',
-          image: {
-            src: 'https://images.unsplash.com/photo-1512361436605-a484bdb34b5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-            alt: 'Sidney Hansen Image',
-          },
-        },
-      ]}
-      callToAction={{
-        text: 'Leer más testimonios',
-        href: 'testimonios',
-        icon: 'tabler:chevron-right',
-      }}
-    >
-      <Fragment slot="bg">
-        <div class="absolute inset-0 bg-canvas-white dark:bg-transparent"></div>
-      </Fragment>
-    </Testimonials>
-
-    <!-- FAQs Widget ******************* -->
-
-    <FAQs
-      title="Preguntas Frecuentes"
-      subtitle="Respuestas a las dudas más frecuentes sobre las sesiones y el proceso terapéutico."
-      tagline="FAQs"
-      classes={{ container: 'max-w-6xl' }}
-      items={[
-        {
-          title: '¿En qué consiste la consulta gratuita?',
-          description:
-            'Es un espacio breve de 10 minutos para conocernos. Me contarás qué estás buscando, resolveré tus dudas y evaluaremos juntos el plan de cuidado ideal para ti.',
-        },
-        {
-          title: '¿Cuántas sesiones voy a necesitar?',
-          description:
-            'Dependerá de tu motivo de consulta, metas y proceso personal. La terapia es un espacio flexible que se adapta de forma completamente personalizada a tus necesidades, ritmo y avances.',
-        },
-        {
-          title: '¿Con qué enfoque terapéutico trabajas?',
-          description:
-            'Trabajo desde las Terapias Contextuales e integro herramientas prácticas de PNL para ayudarte a transformar patrones de pensamiento, gestionar emociones y construir una vida prima.',
-        },
-        {
-          title: '¿Cómo sé si necesito una sesión individual o el programa de 12 semanas?',
-          description:
-            'La sesión individual alivia temas puntuales, y de forma recurrente ofrece un proceso profundo similar al programa de 12 semanas, el cual está diseñado si buscas una estructura paso a paso desde el inicio.',
-        },
-        {
-          title: '¿Las sesiones virtuales son igual de efectivas que las presenciales?',
-          description:
-            'Sí, totalmente. Ofrecen la misma efectividad, confidencialidad y calidez que un encuentro presencial, con la ventaja de tomar la sesión desde la comodidad de tu casa y sin trasladarte.',
-        },
-        {
-          title: '¿Puedo tomar terapia desde cualquier país?',
-          description:
-            'Sí, mi consulta es 100% online para personas hispanohablantes de diversos países. Solo necesitas conexión estable a internet, un dispositivo con cámara y un espacio privado y tranquilo.',
-        },
-        {
-          title: '¿Qué plataforma usamos para las sesiones?',
-          description:
-            'Las sesiones se realizan de forma segura por Zoom. Tras confirmar el pago y la reserva de tu cita, recibirás el enlace de acceso directo y todos los detalles correspondientes por WhatsApp.',
-        },
-        {
-          title: '¿Cuál es la política de cancelación o reprogramación?',
-          description:
-            'Puedes reprogramar tu cita con un mínimo de 24 horas de anticipación a la hora pactada. Recuerda que la nueva fecha asignada estará completamente sujeta a la disponibilidad actual de la agenda.',
-        },
-      ]}
-    >
-      <Fragment slot="bg">
-        <div class="absolute inset-0 bg-mist-grey dark:bg-transparent"></div>
-      </Fragment>
-    </FAQs>
-
-    <!-- Stats Widget ****************** -->
-
-    <Stats
-      stats={[
-        { title: 'Clientes', amount: '1000+' },
-        { title: 'Talleres', amount: '200+' },
-        { title: 'Experiencia', amount: '18+' },
-        { title: 'Estrellas', amount: '5' },
-      ]}
-    >
-      <Fragment slot="bg">
-        <div class="absolute inset-0 bg-canvas-white dark:bg-transparent"></div>
-      </Fragment>
-    </Stats>
-
-    <!-- CallToAction Widget *********** -->
-
-    <CallToAction
-      actions={[
-        {
-          variant: 'custom',
-          text: 'Solicita Una Consulta Inicial',
-          target: '_blank',
-          href: 'https://wa.me/51987717886?text=Hola%20Psic.%20Angie%2C%20me%20gustar%C3%ADa%20solicitar%20la%20consulta%20gratuita%20de%2010%20minutos%20para%20conocer%20m%C3%A1s%20sobre%20las%20sesiones.',
-          icon: 'tabler:brand-whatsapp',
-        },
-      ]}
-    >
-      <Fragment slot="title">Da el primer paso</Fragment>
-
-      <Fragment slot="subtitle">
-        No tienes que seguir enfrentando todo a solas.<br class="hidden md:inline" />Agenda una consulta gratuita de 10
-        minutos y conversemos sobre lo que estás buscando.
-      </Fragment>
-
-      <Fragment slot="bg">
-        <div class="absolute inset-0 bg-canvas-white dark:bg-transparent"></div>
-      </Fragment>
-    </CallToAction>
-
-    <!-- HighlightedPosts Widget ******* -->
-
-    <BlogLatestPosts
-      title="Recursos para tu Bienestar Emocional"
-      information={`Artículos con herramientas prácticas, ejercicios y reflexiones para acompañar tu proceso de crecimiento personal.`}
-    >
-      <Fragment slot="bg">
-        <div class="absolute inset-0 bg-mist-grey dark:bg-transparent"></div>
-      </Fragment>
-    </BlogLatestPosts>
   </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    tagline="Cómo te puedo ayudar"
+    id="servicios"
+    title="Cómo Podemos Trabajar Juntos"
+    classes={{ container: 'services' }}
+    items={[
+      {
+        title: '100% Online y Flexible',
+        description:
+          'Conéctate desde casa, tu oficina o cualquier espacio privado, en un horario que se adapte a tu rutina.',
+      },
+      {
+        title: 'Sesiones individuales o de pareja',
+        description: 'Elige la modalidad que mejor se adapte a lo que quieres trabajar.',
+      },
+      {
+        title: 'Un espacio seguro y confidencial',
+        description: 'Habla con libertad en un entorno profesional, respetuoso y sin juicios.',
+      },
+    ]}
+    image={{
+      src: 'https://assets.angiewongpsi.com/individual_cropped.jpg',
+      alt: 'Sesión individual con Angie Wong',
+    }}
+    callToAction={{
+      text: 'Más información',
+      icon: 'tabler:chevron-right',
+      href: 'sesion-individual',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-primary-navy text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Sesión Individual o de Pareja (50 min virtual)
+      </h3>
+      Un espacio de psicoterapia para trabajar aquello que estás viviendo desde un lugar seguro, profesional y confidencial.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-mist-grey dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+  <!-- Content Widget **************** -->
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Un proceso guiado',
+        description: 'Avanza paso a paso con acompañamiento y seguimiento durante las 12 semanas.',
+      },
+      {
+        title: 'Objetivos y sesiones definidos',
+        description: 'Trabaja con una estructura definida y objetivos concretos para tu proceso.',
+      },
+      {
+        title: 'Herramientas para seguir avanzando',
+        description: 'Desarrolla recursos prácticos que puedas aplicar en tu día a día.',
+      },
+    ]}
+    image={{
+      src: 'https://assets.angiewongpsi.com/hiking_cropped.jpg',
+      alt: 'Blueprint Image',
+    }}
+    callToAction={{
+      text: 'Más información',
+      icon: 'tabler:chevron-right',
+      href: 'programa-12-semanas',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-primary-navy text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Programa de Transformación (12 Semanas)
+      </h3>
+      Un proceso estructurado para quienes buscan un acompañamiento más profundo y continuo.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-mist-grey dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    classes={{
+      wrapper: 'section-background-gray',
+    }}
+    isAfterContent
+    items={[
+      {
+        title: 'Aprendizaje en comunidad',
+        description: 'Comparte experiencias y aprende junto a otras personas en un espacio cuidado.',
+      },
+      {
+        title: 'Talleres para empresas y organizaciones',
+        description: 'Promueve el bienestar emocional y el desarrollo de habilidades dentro de tu equipo.',
+      },
+      {
+        title: 'Contenidos adaptados a cada grupo',
+        description: 'Temas y dinámicas diseñados según las necesidades de cada grupo u organización.',
+      },
+    ]}
+    image={{
+      src: 'https://assets.angiewongpsi.com/group.jpg',
+      alt: 'Astronauts Image',
+    }}
+    callToAction={{
+      text: 'Más información',
+      icon: 'tabler:chevron-right',
+      href: 'talleres-grupos',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-primary-navy text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Talleres y Sesiones Grupales
+      </h3>
+      Espacios grupales para aprender, crecer y desarrollar nuevas herramientas para tu bienestar.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-mist-grey dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Testimonials Widget *********** -->
+
+  <Testimonials
+    title="Lo Que Dicen Quienes Han Trabajado Conmigo"
+    testimonials={[
+      {
+        testimonial: `El proceso con Angie ha sido transformador. Sus herramientas prácticas de PNL realmente me ayudaron a superar la tensión constante que afectaba mi día a día. Ahora me siento empoderada y capaz de manejar los desafíos de una manera muy saludable.`,
+        name: 'Valeria Mendoza',
+        job: 'Mentees Satisfecha',
+        image: {
+          src: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Cary Kennedy Image',
+        },
+      },
+      {
+        testimonial: `Como coach, Angie me guio a través de un process de autorreflexión que cambió mi perspectiva y me dio el impulso necesario para avanzar en mi carrera. Su apoyo fue fundamental para alcanzar mis metas profesionales.`,
+        name: 'Carlos Espinoza',
+        job: 'Cliente Profesional',
+        image: {
+          src: 'https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Josh Wilkinson Image',
+        },
+      },
+      {
+        testimonial:
+          'Gracias a las sesiones de claridad y enfoque con Angie, finalmente pude tomar decisiones informadas sobre mi futuro académico y profesional. Sus herramientas me brindaron total seguridad en mí mismo.',
+        name: 'Mateo Silva',
+        job: 'Estudiante Universitario',
+        image: {
+          src: 'https://images.unsplash.com/photo-1512361436605-a484bdb34b5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Sidney Hansen Image',
+        },
+      },
+    ]}
+    callToAction={{
+      text: 'Leer más testimonios',
+      href: 'testimonios',
+      icon: 'tabler:chevron-right',
+    }}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-canvas-white dark:bg-transparent"></div>
+    </Fragment>
+  </Testimonials>
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Preguntas Frecuentes"
+    subtitle="Respuestas a las dudas más frecuentes sobre las sesiones y el proceso terapéutico."
+    tagline="FAQs"
+    classes={{ container: 'max-w-6xl' }}
+    items={[
+      {
+        title: '¿En qué consiste la consulta gratuita?',
+        description:
+          'Es un espacio breve de 10 minutos para conocernos. Me contarás qué estás buscando, resolveré tus dudas y evaluaremos juntos el plan de cuidado ideal para ti.',
+      },
+      {
+        title: '¿Cuántas sesiones voy a necesitar?',
+        description:
+          'Dependerá de tu motivo de consulta, metas y proceso personal. La terapia es un espacio flexible que se adapta de forma completamente personalizada a tus necesidades, ritmo y avances.',
+      },
+      {
+        title: '¿Con qué enfoque terapéutico trabajas?',
+        description:
+          'Trabajo desde las Terapias Contextuales e integro herramientas prácticas de PNL para ayudarte a transformar patrones de pensamiento, gestionar emociones y construir una vida prima.',
+      },
+      {
+        title: '¿Cómo sé si necesito una sesión individual o el programa de 12 semanas?',
+        description:
+          'La sesión individual alivia temas puntuales, y de forma recurrente ofrece un proceso profundo similar al programa de 12 semanas, el cual está diseñado si buscas una estructura paso a paso desde el inicio.',
+      },
+      {
+        title: '¿Las sesiones virtuales son igual de efectivas que las presenciales?',
+        description:
+          'Sí, totalmente. Ofrecen la misma efectividad, confidencialidad y calidez que un encuentro presencial, con la ventaja de tomar la sesión desde la comodidad de tu casa y sin trasladarte.',
+      },
+      {
+        title: '¿Puedo tomar terapia desde cualquier país?',
+        description:
+          'Sí, mi consulta es 100% online para personas hispanohablantes de diversos países. Solo necesitas conexión estable a internet, un dispositivo con cámara y un espacio privado y tranquilo.',
+      },
+      {
+        title: '¿Qué plataforma usamos para las sesiones?',
+        description:
+          'Las sesiones se realizan de forma segura por Zoom. Tras confirmar el pago y la reserva de tu cita, recibirás el enlace de acceso directo y todos los detalles correspondientes por WhatsApp.',
+      },
+      {
+        title: '¿Cuál es la política de cancelación o reprogramación?',
+        description:
+          'Puedes reprogramar tu cita con un mínimo de 24 horas de anticipación a la hora pactada. Recuerda que la nueva fecha asignada estará completamente sujeta a la disponibilidad actual de la agenda.',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-mist-grey dark:bg-transparent"></div>
+    </Fragment>
+  </FAQs>
+
+  <!-- Stats Widget ****************** -->
+
+  <Stats
+    stats={[
+      { title: 'Clientes', amount: '1000+' },
+      { title: 'Talleres', amount: '200+' },
+      { title: 'Experiencia', amount: '18+' },
+      { title: 'Estrellas', amount: '5' },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-canvas-white dark:bg-transparent"></div>
+    </Fragment>
+  </Stats>
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'custom',
+        text: 'Solicita Una Consulta Inicial',
+        target: '_blank',
+        href: 'https://wa.me/51987717886?text=Hola%20Psic.%20Angie%2C%20me%20gustar%C3%ADa%20solicitar%20la%20consulta%20gratuita%20de%2010%20minutos%20para%20conocer%20m%C3%A1s%20sobre%20las%20sesiones.',
+        icon: 'tabler:brand-whatsapp',
+      },
+    ]}
+  >
+    <Fragment slot="title">Da el primer paso</Fragment>
+
+    <Fragment slot="subtitle">
+      No tienes que seguir enfrentando todo a solas.<br class="hidden md:inline" />Agenda una consulta gratuita de 10
+      minutos y conversemos sobre lo que estás buscando.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-canvas-white dark:bg-transparent"></div>
+    </Fragment>
+  </CallToAction>
+
+  <!-- HighlightedPosts Widget ******* -->
+
+  <BlogLatestPosts
+    title="Recursos para tu Bienestar Emocional"
+    information={`Artículos con herramientas prácticas, ejercicios y reflexiones para acompañar tu proceso de crecimiento personal.`}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-mist-grey dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
 </Layout>
