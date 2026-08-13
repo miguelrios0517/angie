@@ -2,6 +2,7 @@
   "compatibility_date": "2026-06-15",
   "compatibility_flags": ["global_fetch_strictly_public"],
   "name": "angie",
+  "kv_namespaces": [{ "binding": "angie-session", "id": "7ae69a7d1e734093a12ba5fe52920d0f" }],
   "main": "@astrojs/cloudflare/entrypoints/server",
   "assets": {
     "directory": "./dist",

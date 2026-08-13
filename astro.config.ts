@@ -107,5 +107,6 @@ export default defineConfig({
 
   adapter: cloudflare({
     imageService: 'passthrough', // 👈 Forces Cloudflare to respect the passthrough mode
+    sessionKVBindingName: 'angie-session',
   }),
 });
