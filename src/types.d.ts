@@ -91,6 +91,7 @@ export interface Widget {
 export interface Headline {
   title?: string;
   subtitle?: string;
+  subtitle2?: string;
   tagline?: string;
   classes?: Record<string, string>;
 }
